@@ -1,0 +1,9 @@
+com/example/completed_media_library/repositories/VideoGameRepository.class
+com/example/completed_media_library/dtos/VideoGameDTO.class
+com/example/completed_media_library/services/VideoGameService.class
+com/example/completed_media_library/exceptions/ResourceNotFoundException.class
+com/example/completed_media_library/config/WebConfig$1.class
+com/example/completed_media_library/controllers/VideoGameController.class
+com/example/completed_media_library/CompletedMediaLibraryApplication.class
+com/example/completed_media_library/entities/VideoGame.class
+com/example/completed_media_library/config/WebConfig.class

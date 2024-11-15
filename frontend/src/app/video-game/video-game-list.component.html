@@ -1,0 +1,66 @@
+<div class="content-container">
+  <h2 class="cool-title">Completed Video Game List</h2>
+
+  <div class="button-container">
+    <button class="add-game-btn" (click)="goToAddVideoGame()">Add Game</button>
+    <button class="search-game-btn" (click)="toggleSearch()" >Search for Game</button>
+    <button class="sort-games-btn" (click)="toggleSortOptions()">Sort Games</button>
+  </div>
+
+  <!-- Sort Options Dropdown -->
+  <div *ngIf="showSortOptions" class="sort-container">
+    <label for="sortCriteria" class="sort-label">Sort by:</label>
+    <select id="sortCriteria" [(ngModel)]="sortCriteria" (change)="sortGames()" class="sort-select">
+      <option value="title">Title</option>
+      <option value="completedDate">Completed Date</option>
+      <option value="platform">Platform</option>
+    </select>
+  </div>
+
+  <!-- Search Input: Only visible when "Search for Game" is clicked -->
+  <div *ngIf="showSearch" class="search-container">
+    <input
+      type="text"
+      placeholder="Search for a game..."
+      [(ngModel)]="searchTerm"
+      (input)="filterGames()"
+      class="search-input"
+    />
+  </div>
+
+
+  <!-- Video Game List -->
+  <div class="game-grid">
+    <div
+      class="game-card"
+      *ngFor="let game of filteredGames; let i = index"
+      (click)="flipCard(i)"
+      [class.flipped]="flippedCards[i]"
+    >
+      <button class="remove-btn" (click)="removeGame(i); $event.stopPropagation()">x</button>
+
+      <div class="card-inner">
+        <!-- Front of the card -->
+        <div class="card-front">
+          <img *ngIf="game.imageUrl" [src]="game.imageUrl" alt="{{ game.title }} image" class="game-image" />
+          <div class="game-info">
+            <p class="game-title">{{ game.title }}</p>
+            <p class="game-platform">{{ game.platform }}</p>
+          </div>
+        </div>
+
+        <!-- Back of the card -->
+        <div class="card-back">
+          <p>Completed Date</p>
+          <p class="completed-date">{{ game.completedDate ? (game.completedDate | date: 'yyyy-MM-dd') : 'Not Completed' }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+

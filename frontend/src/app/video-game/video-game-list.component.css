@@ -1,0 +1,227 @@
+.game-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.game-image {
+  width: 100%;
+  flex-grow: 1; /* Allow the image to take up remaining space */
+  object-fit: cover;
+  border-radius: 8px 8px 0 0; /* Rounded corners for the top only */
+}
+
+.game-info {
+  padding: 8px;
+  text-align: center;
+  background-color: #000;
+  height: 50px; /* Fixed height for the text section */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.game-title {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.game-platform {
+  font-size: 0.85rem;
+  font-weight: bold;
+  margin: 2px 0;
+  color: #aaa;
+}
+
+.remove-btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: bold;
+  z-index: 3; /* Ensures button is above both card sides */
+}
+
+.remove-btn:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.content-container {
+  margin-left: 20px; /* Adjust this value to control how much space you want on the left */
+}
+
+.button-container {
+  display: flex;
+  gap: 10px; /* Adjust the spacing as needed */
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.add-game-btn, .search-game-btn, .sort-games-btn {
+  background: #111;
+  border: 1px solid #00ffcc;
+  color: #00ffcc;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+  transition: box-shadow 0.3s, transform 0.2s;
+  margin-bottom: 20px;
+}
+
+.add-game-btn:hover, .search-game-btn:hover, .sort-games-btn:hover {
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.8);
+  transform: scale(1.05);
+}
+
+.cool-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #00ffcc; /* Same neon color as the button */
+  text-shadow: 0 0 6px rgba(0, 255, 204, 0.6), 0 0 12px rgba(0, 255, 204, 0.4);
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px; /* Space below title if needed */
+}
+
+/* Video Game Cards */
+.game-card {
+  position: relative;
+  width: 200px;
+  height: 300px; /* Fixed overall height for the card */
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  background: #000;
+  display: flex;
+  flex-direction: column;
+}
+
+.game-image {
+  width: 100%;
+  height: 70%; /* Adjust height for the image section */
+  object-fit: cover;
+  border-radius: 8px 8px 0 0; /* Apply rounded corners only to the top */
+}
+
+.card-inner {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+.game-card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 8px;
+}
+
+.card-front {
+  background: #000; /* Front side background */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.card-back {
+  background: #222; /* Back side background */
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 16px; /* Adjust padding if it causes overflow */
+  text-align: center;
+  transform: rotateY(180deg);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  box-sizing: border-box; /* Ensures padding doesn’t affect width */
+}
+
+.completed-date {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 4px; /* Space between label and date */
+}
+
+.search-container {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.search-input {
+  width: 300px; /* Set a fixed width */
+  max-width: 80%; /* Make it responsive by limiting the width to 80% of its container */
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #111;
+  color: #00ffcc;
+  font-size: 1rem;
+}
+
+.sort-container {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sort-label {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #00ffcc; /* Neon color to match other elements */
+  text-shadow: 0 0 6px rgba(0, 255, 204, 0.6), 0 0 12px rgba(0, 255, 204, 0.4);
+}
+
+.sort-select {
+  padding: 8px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  background-color: #111;
+  color: #00ffcc; /* Match the neon theme */
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.sort-select:hover {
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+
+
+
+
+

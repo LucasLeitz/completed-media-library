@@ -1,0 +1,767 @@
+❯ Building...
+✔ Building...
+Initial chunk files | Names         |  Raw size
+polyfills.js        | polyfills     |  90.20 kB | 
+main.js             | main          |  25.64 kB | 
+styles.css          | styles        | 492 bytes | 
+
+                    | Initial total | 116.34 kB
+
+Application bundle generation complete. [0.951 seconds]
+
+Watch mode enabled. Watching for file changes...
+NOTE: Raw file sizes do not reflect development server per-request transformations.
+  ➜  Local:   http://localhost:4200/
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 25.77 kB | 
+
+Application bundle generation complete. [0.197 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 25.88 kB | 
+
+Application bundle generation complete. [0.107 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 25.99 kB | 
+
+Application bundle generation complete. [0.126 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 26.04 kB | 
+
+Application bundle generation complete. [0.114 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 26.25 kB | 
+
+Application bundle generation complete. [0.107 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 26.04 kB | 
+
+Application bundle generation complete. [0.102 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 25.23 kB | 
+
+Application bundle generation complete. [0.122 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 25.97 kB | 
+
+Application bundle generation complete. [0.087 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+
+No output file changes.
+
+Application bundle generation complete. [0.119 seconds]
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 26.70 kB | 
+
+Application bundle generation complete. [0.099 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 28.84 kB | 
+
+Application bundle generation complete. [0.134 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 28.92 kB | 
+
+Application bundle generation complete. [0.099 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 29.11 kB | 
+
+Application bundle generation complete. [0.081 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.095 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'toggleSearch' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/video-game/video-game-list.component.html:6:45:
+[37m      6 │ ...search-game-btn" (click)="[32mtoggleSearch[37m()" >Search for Game</button>
+        ╵                              [32m~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component VideoGameListComponent.
+
+    src/app/video-game/video-game-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./video-game-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.140 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'toggleSearch' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/video-game/video-game-list.component.html:6:45:
+[37m      6 │ ...search-game-btn" (click)="[32mtoggleSearch[37m()" >Search for Game</button>
+        ╵                              [32m~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component VideoGameListComponent.
+
+    src/app/video-game/video-game-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./video-game-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.117 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'toggleSearch' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/video-game/video-game-list.component.html:6:45:
+[37m      6 │ ...search-game-btn" (click)="[32mtoggleSearch[37m()" >Search for Game</button>
+        ╵                              [32m~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component VideoGameListComponent.
+
+    src/app/video-game/video-game-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./video-game-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'showSearch' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/video-game/video-game-list.component.html:9:14:
+[37m      9 │   <div *ngIf="[32mshowSearch[37m" class="search-container">
+        ╵               [32m~~~~~~~~~~[0m
+
+  Error occurs in the template of component VideoGameListComponent.
+
+    src/app/video-game/video-game-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./video-game-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/video-game/video-game-list.component.html:13:6:
+[37m      13 │       [32m[(ngModel)]="searchTerm"[37m
+         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component VideoGameListComponent.
+
+    src/app/video-game/video-game-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./video-game-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'searchTerm' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/video-game/video-game-list.component.html:13:19:
+[37m      13 │       [(ngModel)]="[32msearchTerm[37m"
+         ╵                    [32m~~~~~~~~~~[0m
+
+  Error occurs in the template of component VideoGameListComponent.
+
+    src/app/video-game/video-game-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./video-game-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'searchTerm' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/video-game/video-game-list.component.html:13:19:
+[37m      13 │       [(ngModel)]="[32msearchTerm[37m"
+         ╵                    [32m~~~~~~~~~~[0m
+
+  Error occurs in the template of component VideoGameListComponent.
+
+    src/app/video-game/video-game-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./video-game-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'filterGames' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/video-game/video-game-list.component.html:14:15:
+[37m      14 │       (input)="[32mfilterGames[37m()"
+         ╵                [32m~~~~~~~~~~~[0m
+
+  Error occurs in the template of component VideoGameListComponent.
+
+    src/app/video-game/video-game-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./video-game-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.157 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'toggleSearch' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/video-game/video-game-list.component.html:6:45:
+[37m      6 │ ...search-game-btn" (click)="[32mtoggleSearch[37m()" >Search for Game</button>
+        ╵                              [32m~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component VideoGameListComponent.
+
+    src/app/video-game/video-game-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./video-game-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/video-game/video-game-list.component.html:14:6:
+[37m      14 │       [32m[(ngModel)]="searchTerm"[37m
+         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component VideoGameListComponent.
+
+    src/app/video-game/video-game-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./video-game-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'filterGames' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/video-game/video-game-list.component.html:15:15:
+[37m      15 │       (input)="[32mfilterGames[37m()"
+         ╵                [32m~~~~~~~~~~~[0m
+
+  Error occurs in the template of component VideoGameListComponent.
+
+    src/app/video-game/video-game-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./video-game-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.132 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/video-game/video-game-list.component.html:14:6:
+[37m      14 │       [32m[(ngModel)]="searchTerm"[37m
+         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component VideoGameListComponent.
+
+    src/app/video-game/video-game-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./video-game-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'filterGames' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/video-game/video-game-list.component.html:15:15:
+[37m      15 │       (input)="[32mfilterGames[37m()"
+         ╵                [32m~~~~~~~~~~~[0m
+
+  Error occurs in the template of component VideoGameListComponent.
+
+    src/app/video-game/video-game-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./video-game-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'resetFilter' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/video-game/video-game-list.component.ts:37:11:
+[37m      37 │       this.[32mresetFilter[37m(); // Reset search when closing
+         ╵            [32m~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.142 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/video-game/video-game-list.component.html:14:6:
+[37m      14 │       [32m[(ngModel)]="searchTerm"[37m
+         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component VideoGameListComponent.
+
+    src/app/video-game/video-game-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./video-game-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'resetFilter' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/video-game/video-game-list.component.ts:37:11:
+[37m      37 │       this.[32mresetFilter[37m(); // Reset search when closing
+         ╵            [32m~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2551: Property 'filteredGames' does not exist on type 'VideoGameListComponent'. Did you mean 'filterGames'?[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/video-game/video-game-list.component.ts:44:11:
+[37m      44 │       this.[32mfilteredGames[37m = this.videoGames; // Show all games if s...
+         ╵            [32m~~~~~~~~~~~~~[0m
+
+  'filterGames' is declared here.
+
+    src/app/video-game/video-game-list.component.ts:42:2:
+[37m      42 │   [32mfilterGames[37m(): void {
+         ╵   [32m~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2551: Property 'filteredGames' does not exist on type 'VideoGameListComponent'. Did you mean 'filterGames'?[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/video-game/video-game-list.component.ts:46:11:
+[37m      46 │       this.[32mfilteredGames[37m = this.videoGames.filter(game =>
+         ╵            [32m~~~~~~~~~~~~~[0m
+
+  'filterGames' is declared here.
+
+    src/app/video-game/video-game-list.component.ts:42:2:
+[37m      42 │   [32mfilterGames[37m(): void {
+         ╵   [32m~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.160 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/video-game/video-game-list.component.html:14:6:
+[37m      14 │       [32m[(ngModel)]="searchTerm"[37m
+         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component VideoGameListComponent.
+
+    src/app/video-game/video-game-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./video-game-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'resetFilter' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/video-game/video-game-list.component.ts:39:11:
+[37m      39 │       this.[32mresetFilter[37m(); // Reset search when closing
+         ╵            [32m~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.084 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/video-game/video-game-list.component.html:14:6:
+[37m      14 │       [32m[(ngModel)]="searchTerm"[37m
+         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component VideoGameListComponent.
+
+    src/app/video-game/video-game-list.component.ts:12:15:
+[37m      12 │   templateUrl: [32m'./video-game-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size
+polyfills.js        | polyfills     |  90.20 kB | 
+main.js             | main          |  31.54 kB | 
+styles.css          | styles        | 492 bytes | 
+
+                    | Initial total | 122.23 kB
+
+Application bundle generation complete. [0.127 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 31.81 kB | 
+
+Application bundle generation complete. [0.153 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 31.82 kB | 
+
+Application bundle generation complete. [0.103 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 31.88 kB | 
+
+Application bundle generation complete. [0.123 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 31.85 kB | 
+
+Application bundle generation complete. [0.123 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.111 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'toggleSortOptions' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/video-game/video-game-list.component.html:7:44:
+[37m      7 │ ...="sort-games-btn" (click)="[32mtoggleSortOptions[37m()">Sort Games</button>
+        ╵                               [32m~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component VideoGameListComponent.
+
+    src/app/video-game/video-game-list.component.ts:13:15:
+[37m      13 │   templateUrl: [32m'./video-game-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.136 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'toggleSortOptions' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/video-game/video-game-list.component.html:7:44:
+[37m      7 │ ...="sort-games-btn" (click)="[32mtoggleSortOptions[37m()">Sort Games</button>
+        ╵                               [32m~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component VideoGameListComponent.
+
+    src/app/video-game/video-game-list.component.ts:13:15:
+[37m      13 │   templateUrl: [32m'./video-game-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'showSortOptions' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/video-game/video-game-list.component.html:11:14:
+[37m      11 │   <div *ngIf="[32mshowSortOptions[37m" class="sort-container">
+         ╵               [32m~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component VideoGameListComponent.
+
+    src/app/video-game/video-game-list.component.ts:13:15:
+[37m      13 │   templateUrl: [32m'./video-game-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'sortCriteria' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/video-game/video-game-list.component.html:13:43:
+[37m      13 │ ...="sortCriteria" [(ngModel)]="[32msortCriteria[37m" (change)="sortGames()">
+         ╵                                 [32m~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component VideoGameListComponent.
+
+    src/app/video-game/video-game-list.component.ts:13:15:
+[37m      13 │   templateUrl: [32m'./video-game-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'sortCriteria' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/video-game/video-game-list.component.html:13:43:
+[37m      13 │ ...="sortCriteria" [(ngModel)]="[32msortCriteria[37m" (change)="sortGames()">
+         ╵                                 [32m~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component VideoGameListComponent.
+
+    src/app/video-game/video-game-list.component.ts:13:15:
+[37m      13 │   templateUrl: [32m'./video-game-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'sortGames' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/video-game/video-game-list.component.html:13:67:
+[37m      13 │ ...="sortCriteria" [(ngModel)]="sortCriteria" (change)="[32msortGames[37m()">
+         ╵                                                         [32m~~~~~~~~~[0m
+
+  Error occurs in the template of component VideoGameListComponent.
+
+    src/app/video-game/video-game-list.component.ts:13:15:
+[37m      13 │   templateUrl: [32m'./video-game-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.114 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'toggleSortOptions' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/video-game/video-game-list.component.html:7:44:
+[37m      7 │ ...="sort-games-btn" (click)="[32mtoggleSortOptions[37m()">Sort Games</button>
+        ╵                               [32m~~~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component VideoGameListComponent.
+
+    src/app/video-game/video-game-list.component.ts:13:15:
+[37m      13 │   templateUrl: [32m'./video-game-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'sortGames' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/video-game/video-game-list.component.html:13:67:
+[37m      13 │ ...="sortCriteria" [(ngModel)]="sortCriteria" (change)="[32msortGames[37m()">
+         ╵                                                         [32m~~~~~~~~~[0m
+
+  Error occurs in the template of component VideoGameListComponent.
+
+    src/app/video-game/video-game-list.component.ts:13:15:
+[37m      13 │   templateUrl: [32m'./video-game-list.component.html'[37m,
+         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size
+polyfills.js        | polyfills     |  90.20 kB | 
+main.js             | main          |  34.89 kB | 
+styles.css          | styles        | 492 bytes | 
+
+                    | Initial total | 125.58 kB
+
+Application bundle generation complete. [0.121 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 35.37 kB | 
+
+Application bundle generation complete. [0.090 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 35.09 kB | 
+
+Application bundle generation complete. [0.145 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 35.12 kB | 
+
+Application bundle generation complete. [0.114 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 35.71 kB | 
+
+Application bundle generation complete. [0.120 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 35.68 kB | 
+
+Application bundle generation complete. [0.112 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 35.70 kB | 
+
+Application bundle generation complete. [0.121 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 35.70 kB | 
+
+Application bundle generation complete. [0.111 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 35.70 kB | 
+
+Application bundle generation complete. [0.129 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 35.70 kB | 
+
+Application bundle generation complete. [0.110 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 35.70 kB | 
+
+Application bundle generation complete. [0.105 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 35.70 kB | 
+
+Application bundle generation complete. [0.112 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 35.73 kB | 
+
+Application bundle generation complete. [0.073 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 35.77 kB | 
+
+Application bundle generation complete. [0.077 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 35.77 kB | 
+
+Application bundle generation complete. [0.100 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 35.79 kB | 
+
+Application bundle generation complete. [0.096 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 35.81 kB | 
+
+Application bundle generation complete. [0.121 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 35.81 kB | 
+
+Application bundle generation complete. [0.095 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 35.81 kB | 
+
+Application bundle generation complete. [0.105 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+
+No output file changes.
+
+Application bundle generation complete. [0.080 seconds]
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 35.81 kB | 
+
+Application bundle generation complete. [0.109 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 35.89 kB | 
+
+Application bundle generation complete. [0.101 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 35.88 kB | 
+
+Application bundle generation complete. [0.097 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 35.86 kB | 
+
+Application bundle generation complete. [0.090 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names | Raw size
+main.js             | main  | 35.88 kB | 
+
+Application bundle generation complete. [0.113 seconds]
+
+Page reload sent to client(s).
