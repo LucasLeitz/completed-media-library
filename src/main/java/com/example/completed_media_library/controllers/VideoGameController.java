@@ -65,4 +65,10 @@ public class VideoGameController {
         return responseMap;
     }
 
+    @GetMapping("/completed/count/{year}")
+    public ResponseEntity<Long> getCompletedVideoGamesCount(@PathVariable int year) {
+        long count = videoGameService.getCompletedItemsForYear(year).size();
+        return ResponseEntity.ok(count);
+    }
+
 }

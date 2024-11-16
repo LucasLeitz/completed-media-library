@@ -3,6 +3,7 @@ package com.example.completed_media_library.services;
 import com.example.completed_media_library.exceptions.ResourceNotFoundException;
 import org.springframework.data.jpa.repository.JpaRepository;
 
+import java.time.LocalDate;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -31,5 +32,24 @@ public abstract class BaseService<T, D> {
             throw new ResourceNotFoundException("Entity with ID " + id + " not found.");
         }
         getRepository().deleteById(id);
+    }
+
+    public List<T> getCompletedItemsForYear(int year) {
+        LocalDate startOfYear = LocalDate.of(year, 1, 1);
+        LocalDate endOfYear = LocalDate.of(year, 12, 31);
+
+        return getRepository().findAll().stream()
+                .filter(item -> {
+                    try {
+                        // Assuming your entity has a `getCompletedDate()` method
+                        LocalDate completedDate = (LocalDate) item.getClass()
+                                .getMethod("getCompletedDate")
+                                .invoke(item);
+
+                        return completedDate != null && !completedDate.isBefore(startOfYear) && !completedDate.isAfter(endOfYear);
+                    } catch (Exception e) {
+                        return false;
+                    }
+                }).toList();
     }
 }

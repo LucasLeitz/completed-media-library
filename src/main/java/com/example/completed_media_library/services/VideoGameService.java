@@ -5,6 +5,7 @@ import com.example.completed_media_library.entities.VideoGame;
 import com.example.completed_media_library.repositories.VideoGameRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import java.util.List;
 
 @Service
 public class VideoGameService extends BaseService<VideoGame, VideoGameDTO> {
