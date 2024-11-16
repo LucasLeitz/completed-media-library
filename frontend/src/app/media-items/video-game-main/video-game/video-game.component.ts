@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { VideoGameService } from '../services/video-game.service';
-import { VideoGame} from '../models/video-game.model';
+import { VideoGameService } from '../../../services/video-game.service';
+import { VideoGame} from '../../../models/video-game.model';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import {FormsModule} from '@angular/forms';
@@ -10,10 +10,10 @@ import {FormsModule} from '@angular/forms';
   selector: 'app-video-game-list',
   standalone: true,
   imports: [CommonModule, FormsModule],
-  templateUrl: './video-game-list.component.html',
-  styleUrl: './video-game-list.component.css'
+  templateUrl: './video-game.component.html',
+  styleUrl: '../../../css/media.component.css'
 })
-export class VideoGameListComponent {
+export class VideoGameComponent {
   videoGames: VideoGame[] = [];
   filteredGames: VideoGame[] = [];
   flippedCards: boolean[] = []; // Tracks the flip state of each card
@@ -91,14 +91,25 @@ export class VideoGameListComponent {
 
   // Method to remove a game
   removeGame(index: number): void {
-    const gameToRemove = this.videoGames[index];
+    const gameToRemove = this.filteredGames[index];
+    if (!gameToRemove || !gameToRemove.id) {
+      console.error("Invalid game or missing ID:", gameToRemove);
+      return;
+    }
+
+    console.log("Deleting game with ID:", gameToRemove.id); // Debug the ID
+
     if (confirm('Are you sure you want to remove this game?')) {
-      this.videoGameService.deleteVideoGame(gameToRemove.id).subscribe(() => {
-        this.videoGames.splice(index, 1); // Update UI after successful deletion
-        this.flippedCards.splice(index, 1); // Remove the corresponding flip state
-      }, error => {
-        console.error('Failed to delete the game:', error);
-        alert('Could not delete the game. Please try again.');
+      this.videoGameService.deleteVideoGame(gameToRemove.id).subscribe({
+        next: () => {
+          this.videoGames = this.videoGames.filter(game => game.id !== gameToRemove.id);
+          this.filteredGames = this.filteredGames.filter(game => game.id !== gameToRemove.id);
+          console.log(`Game with ID ${gameToRemove.id} successfully deleted.`);
+        },
+        error: (err) => {
+          console.error('Failed to delete the game:', err);
+          alert('Could not delete the game. Please try again.');
+        },
       });
     }
   }

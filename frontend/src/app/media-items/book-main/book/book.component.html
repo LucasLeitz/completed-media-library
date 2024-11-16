@@ -1,0 +1,57 @@
+<div class="content-container">
+  <h2 class="cool-title">Completed Book List</h2>
+
+  <div class="button-container">
+    <button class="add-game-btn" (click)="goToAddBook()">Add Book</button>
+    <button class="search-game-btn" (click)="toggleSearch()">Search for Book</button>
+    <button class="sort-games-btn" (click)="toggleSortOptions()">Sort Books</button>
+  </div>
+
+  <!-- Sort Options Dropdown -->
+  <div *ngIf="showSortOptions" class="sort-container">
+    <label for="sortCriteria" class="sort-label">Sort by:</label>
+    <select id="sortCriteria" [(ngModel)]="sortCriteria" (change)="sortBooks()" class="sort-select">
+      <option value="title">Title</option>
+      <option value="completedDate">Completed Date</option>
+    </select>
+  </div>
+
+  <!-- Search Input -->
+  <div *ngIf="showSearch" class="search-container">
+    <input
+      type="text"
+      placeholder="Search for a book..."
+      [(ngModel)]="searchTerm"
+      (input)="filterBooks()"
+      class="search-input"
+    />
+  </div>
+
+  <!-- Book List -->
+  <div class="game-grid">
+    <div
+      class="game-card"
+      *ngFor="let book of filteredBooks; let i = index"
+      (click)="flipCard(i)"
+      [class.flipped]="flippedCards[i]"
+    >
+      <button class="remove-btn" (click)="removeBook(i); $event.stopPropagation()">x</button>
+
+      <div class="card-inner">
+        <!-- Front of the card -->
+        <div class="card-front">
+          <img *ngIf="book.imageUrl" [src]="book.imageUrl" alt="{{ book.title }} image" class="game-image" />
+          <div class="game-info">
+            <p class="game-title">{{ book.title }}</p>
+          </div>
+        </div>
+
+        <!-- Back of the card -->
+        <div class="card-back">
+          <p>Completed Date</p>
+          <p class="completed-date">{{ book.completedDate ? (book.completedDate | date: 'yyyy-MM-dd') : 'Not Completed' }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

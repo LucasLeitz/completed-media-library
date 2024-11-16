@@ -1,0 +1,57 @@
+<div class="content-container">
+  <h2 class="cool-title">Completed TV Show List</h2>
+
+  <div class="button-container">
+    <button class="add-game-btn" (click)="goToAddTvShow()">Add TV Show</button>
+    <button class="search-game-btn" (click)="toggleSearch()">Search for TV Show</button>
+    <button class="sort-games-btn" (click)="toggleSortOptions()">Sort TV Shows</button>
+  </div>
+
+  <!-- Sort Options Dropdown -->
+  <div *ngIf="showSortOptions" class="sort-container">
+    <label for="sortCriteria" class="sort-label">Sort by:</label>
+    <select id="sortCriteria" [(ngModel)]="sortCriteria" (change)="sortTvShows()" class="sort-select">
+      <option value="title">Title</option>
+      <option value="completedDate">Completed Date</option>
+    </select>
+  </div>
+
+  <!-- Search Input -->
+  <div *ngIf="showSearch" class="search-container">
+    <input
+      type="text"
+      placeholder="Search for a TV show..."
+      [(ngModel)]="searchTerm"
+      (input)="filterTvShows()"
+      class="search-input"
+    />
+  </div>
+
+  <!-- TV Show List -->
+  <div class="game-grid">
+    <div
+      class="game-card"
+      *ngFor="let tvShow of filteredTvShows; let i = index"
+      (click)="flipCard(i)"
+      [class.flipped]="flippedCards[i]"
+    >
+      <button class="remove-btn" (click)="removeTvShow(i); $event.stopPropagation()">x</button>
+
+      <div class="card-inner">
+        <!-- Front of the card -->
+        <div class="card-front">
+          <img *ngIf="tvShow.imageUrl" [src]="tvShow.imageUrl" alt="{{ tvShow.title }} image" class="game-image" />
+          <div class="game-info">
+            <p class="game-title">{{ tvShow.title }}</p>
+          </div>
+        </div>
+
+        <!-- Back of the card -->
+        <div class="card-back">
+          <p>Completed Date</p>
+          <p class="completed-date">{{ tvShow.completedDate ? (tvShow.completedDate | date: 'yyyy-MM-dd') : 'Not Completed' }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

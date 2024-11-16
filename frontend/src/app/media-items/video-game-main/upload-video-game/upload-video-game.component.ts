@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { VideoGameService } from '../services/video-game.service';
+import { VideoGameService } from '../../../services/video-game.service';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 import { catchError } from 'rxjs/operators';
@@ -11,7 +11,7 @@ import { HttpErrorResponse } from '@angular/common/http';
 @Component({
   selector: 'app-upload-video-game',
   templateUrl: './upload-video-game.component.html',
-  styleUrls: ['./upload-video-game.component.css'],
+  styleUrl: '../../../css/upload-media.component.css',
   standalone: true,
   imports: [FormsModule, CommonModule],
 })

@@ -2,766 +2,524 @@
 ✔ Building...
 Initial chunk files | Names         |  Raw size
 polyfills.js        | polyfills     |  90.20 kB | 
-main.js             | main          |  25.64 kB | 
+main.js             | main          |  86.96 kB | 
 styles.css          | styles        | 492 bytes | 
 
-                    | Initial total | 116.34 kB
+                    | Initial total | 177.65 kB
 
-Application bundle generation complete. [0.951 seconds]
+Application bundle generation complete. [1.204 seconds]
 
 Watch mode enabled. Watching for file changes...
 NOTE: Raw file sizes do not reflect development server per-request transformations.
+Re-optimizing dependencies because vite config has changed
   ➜  Local:   http://localhost:4200/
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
 Initial chunk files | Names | Raw size
-main.js             | main  | 25.77 kB | 
+main.js             | main  | 87.01 kB | 
 
-Application bundle generation complete. [0.197 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 25.88 kB | 
-
-Application bundle generation complete. [0.107 seconds]
+Application bundle generation complete. [0.238 seconds]
 
 Page reload sent to client(s).
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 25.99 kB | 
+Application bundle generation failed. [0.158 seconds]
 
-Application bundle generation complete. [0.126 seconds]
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS-992008: Could not find stylesheet file './upload-tv-show.component.css'.[0m [1m[35m[plugin angular-compiler][0m
 
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 26.04 kB | 
-
-Application bundle generation complete. [0.114 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 26.25 kB | 
-
-Application bundle generation complete. [0.107 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 26.04 kB | 
-
-Application bundle generation complete. [0.102 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 25.23 kB | 
-
-Application bundle generation complete. [0.122 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 25.97 kB | 
-
-Application bundle generation complete. [0.087 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-
-No output file changes.
-
-Application bundle generation complete. [0.119 seconds]
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 26.70 kB | 
-
-Application bundle generation complete. [0.099 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 28.84 kB | 
-
-Application bundle generation complete. [0.134 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 28.92 kB | 
-
-Application bundle generation complete. [0.099 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 29.11 kB | 
-
-Application bundle generation complete. [0.081 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.095 seconds]
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'toggleSearch' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/video-game/video-game-list.component.html:6:45:
-[37m      6 │ ...search-game-btn" (click)="[32mtoggleSearch[37m()" >Search for Game</button>
-        ╵                              [32m~~~~~~~~~~~~[0m
-
-  Error occurs in the template of component VideoGameListComponent.
-
-    src/app/video-game/video-game-list.component.ts:12:15:
-[37m      12 │   templateUrl: [32m'./video-game-list.component.html'[37m,
-         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.140 seconds]
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'toggleSearch' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/video-game/video-game-list.component.html:6:45:
-[37m      6 │ ...search-game-btn" (click)="[32mtoggleSearch[37m()" >Search for Game</button>
-        ╵                              [32m~~~~~~~~~~~~[0m
-
-  Error occurs in the template of component VideoGameListComponent.
-
-    src/app/video-game/video-game-list.component.ts:12:15:
-[37m      12 │   templateUrl: [32m'./video-game-list.component.html'[37m,
-         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.117 seconds]
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'toggleSearch' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/video-game/video-game-list.component.html:6:45:
-[37m      6 │ ...search-game-btn" (click)="[32mtoggleSearch[37m()" >Search for Game</button>
-        ╵                              [32m~~~~~~~~~~~~[0m
-
-  Error occurs in the template of component VideoGameListComponent.
-
-    src/app/video-game/video-game-list.component.ts:12:15:
-[37m      12 │   templateUrl: [32m'./video-game-list.component.html'[37m,
-         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'showSearch' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/video-game/video-game-list.component.html:9:14:
-[37m      9 │   <div *ngIf="[32mshowSearch[37m" class="search-container">
-        ╵               [32m~~~~~~~~~~[0m
-
-  Error occurs in the template of component VideoGameListComponent.
-
-    src/app/video-game/video-game-list.component.ts:12:15:
-[37m      12 │   templateUrl: [32m'./video-game-list.component.html'[37m,
-         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/video-game/video-game-list.component.html:13:6:
-[37m      13 │       [32m[(ngModel)]="searchTerm"[37m
-         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-  Error occurs in the template of component VideoGameListComponent.
-
-    src/app/video-game/video-game-list.component.ts:12:15:
-[37m      12 │   templateUrl: [32m'./video-game-list.component.html'[37m,
-         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'searchTerm' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/video-game/video-game-list.component.html:13:19:
-[37m      13 │       [(ngModel)]="[32msearchTerm[37m"
-         ╵                    [32m~~~~~~~~~~[0m
-
-  Error occurs in the template of component VideoGameListComponent.
-
-    src/app/video-game/video-game-list.component.ts:12:15:
-[37m      12 │   templateUrl: [32m'./video-game-list.component.html'[37m,
-         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'searchTerm' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/video-game/video-game-list.component.html:13:19:
-[37m      13 │       [(ngModel)]="[32msearchTerm[37m"
-         ╵                    [32m~~~~~~~~~~[0m
-
-  Error occurs in the template of component VideoGameListComponent.
-
-    src/app/video-game/video-game-list.component.ts:12:15:
-[37m      12 │   templateUrl: [32m'./video-game-list.component.html'[37m,
-         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'filterGames' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/video-game/video-game-list.component.html:14:15:
-[37m      14 │       (input)="[32mfilterGames[37m()"
-         ╵                [32m~~~~~~~~~~~[0m
-
-  Error occurs in the template of component VideoGameListComponent.
-
-    src/app/video-game/video-game-list.component.ts:12:15:
-[37m      12 │   templateUrl: [32m'./video-game-list.component.html'[37m,
-         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.157 seconds]
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'toggleSearch' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/video-game/video-game-list.component.html:6:45:
-[37m      6 │ ...search-game-btn" (click)="[32mtoggleSearch[37m()" >Search for Game</button>
-        ╵                              [32m~~~~~~~~~~~~[0m
-
-  Error occurs in the template of component VideoGameListComponent.
-
-    src/app/video-game/video-game-list.component.ts:12:15:
-[37m      12 │   templateUrl: [32m'./video-game-list.component.html'[37m,
-         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/video-game/video-game-list.component.html:14:6:
-[37m      14 │       [32m[(ngModel)]="searchTerm"[37m
-         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-  Error occurs in the template of component VideoGameListComponent.
-
-    src/app/video-game/video-game-list.component.ts:12:15:
-[37m      12 │   templateUrl: [32m'./video-game-list.component.html'[37m,
-         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'filterGames' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/video-game/video-game-list.component.html:15:15:
-[37m      15 │       (input)="[32mfilterGames[37m()"
-         ╵                [32m~~~~~~~~~~~[0m
-
-  Error occurs in the template of component VideoGameListComponent.
-
-    src/app/video-game/video-game-list.component.ts:12:15:
-[37m      12 │   templateUrl: [32m'./video-game-list.component.html'[37m,
-         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.132 seconds]
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/video-game/video-game-list.component.html:14:6:
-[37m      14 │       [32m[(ngModel)]="searchTerm"[37m
-         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-  Error occurs in the template of component VideoGameListComponent.
-
-    src/app/video-game/video-game-list.component.ts:12:15:
-[37m      12 │   templateUrl: [32m'./video-game-list.component.html'[37m,
-         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'filterGames' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/video-game/video-game-list.component.html:15:15:
-[37m      15 │       (input)="[32mfilterGames[37m()"
-         ╵                [32m~~~~~~~~~~~[0m
-
-  Error occurs in the template of component VideoGameListComponent.
-
-    src/app/video-game/video-game-list.component.ts:12:15:
-[37m      12 │   templateUrl: [32m'./video-game-list.component.html'[37m,
-         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'resetFilter' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/video-game/video-game-list.component.ts:37:11:
-[37m      37 │       this.[32mresetFilter[37m(); // Reset search when closing
-         ╵            [32m~~~~~~~~~~~[0m
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.142 seconds]
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/video-game/video-game-list.component.html:14:6:
-[37m      14 │       [32m[(ngModel)]="searchTerm"[37m
-         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-  Error occurs in the template of component VideoGameListComponent.
-
-    src/app/video-game/video-game-list.component.ts:12:15:
-[37m      12 │   templateUrl: [32m'./video-game-list.component.html'[37m,
-         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'resetFilter' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/video-game/video-game-list.component.ts:37:11:
-[37m      37 │       this.[32mresetFilter[37m(); // Reset search when closing
-         ╵            [32m~~~~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2551: Property 'filteredGames' does not exist on type 'VideoGameListComponent'. Did you mean 'filterGames'?[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/video-game/video-game-list.component.ts:44:11:
-[37m      44 │       this.[32mfilteredGames[37m = this.videoGames; // Show all games if s...
-         ╵            [32m~~~~~~~~~~~~~[0m
-
-  'filterGames' is declared here.
-
-    src/app/video-game/video-game-list.component.ts:42:2:
-[37m      42 │   [32mfilterGames[37m(): void {
-         ╵   [32m~~~~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2551: Property 'filteredGames' does not exist on type 'VideoGameListComponent'. Did you mean 'filterGames'?[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/video-game/video-game-list.component.ts:46:11:
-[37m      46 │       this.[32mfilteredGames[37m = this.videoGames.filter(game =>
-         ╵            [32m~~~~~~~~~~~~~[0m
-
-  'filterGames' is declared here.
-
-    src/app/video-game/video-game-list.component.ts:42:2:
-[37m      42 │   [32mfilterGames[37m(): void {
-         ╵   [32m~~~~~~~~~~~[0m
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.160 seconds]
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/video-game/video-game-list.component.html:14:6:
-[37m      14 │       [32m[(ngModel)]="searchTerm"[37m
-         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-  Error occurs in the template of component VideoGameListComponent.
-
-    src/app/video-game/video-game-list.component.ts:12:15:
-[37m      12 │   templateUrl: [32m'./video-game-list.component.html'[37m,
-         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2339: Property 'resetFilter' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/video-game/video-game-list.component.ts:39:11:
-[37m      39 │       this.[32mresetFilter[37m(); // Reset search when closing
-         ╵            [32m~~~~~~~~~~~[0m
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.084 seconds]
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG8002: Can't bind to 'ngModel' since it isn't a known property of 'input'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/video-game/video-game-list.component.html:14:6:
-[37m      14 │       [32m[(ngModel)]="searchTerm"[37m
-         ╵       [32m~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-  Error occurs in the template of component VideoGameListComponent.
-
-    src/app/video-game/video-game-list.component.ts:12:15:
-[37m      12 │   templateUrl: [32m'./video-game-list.component.html'[37m,
-         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    src/app/tv-show-main/upload-tv-show/upload-tv-show.component.ts:13:14:
+[37m      13 │   styleUrls: [[32m'./upload-tv-show.component.css'[37m],
+         ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
 
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
 Initial chunk files | Names         |  Raw size
+main.js             | main          |  99.39 kB | 
 polyfills.js        | polyfills     |  90.20 kB | 
-main.js             | main          |  31.54 kB | 
 styles.css          | styles        | 492 bytes | 
 
-                    | Initial total | 122.23 kB
+                    | Initial total | 190.08 kB
 
-Application bundle generation complete. [0.127 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 31.81 kB | 
-
-Application bundle generation complete. [0.153 seconds]
+Application bundle generation complete. [0.179 seconds]
 
 Page reload sent to client(s).
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
 Initial chunk files | Names | Raw size
-main.js             | main  | 31.82 kB | 
+main.js             | main  | 99.38 kB | 
 
-Application bundle generation complete. [0.103 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 31.88 kB | 
-
-Application bundle generation complete. [0.123 seconds]
+Application bundle generation complete. [0.064 seconds]
 
 Page reload sent to client(s).
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 31.85 kB | 
+Initial chunk files | Names |  Raw size
+main.js             | main  | 111.75 kB | 
 
-Application bundle generation complete. [0.123 seconds]
+Application bundle generation complete. [0.216 seconds]
 
 Page reload sent to client(s).
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.111 seconds]
+Application bundle generation failed. [0.107 seconds]
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'toggleSortOptions' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./tv-show-main/tv-show/tv-show.component"[0m
 
-    src/app/video-game/video-game-list.component.html:7:44:
-[37m      7 │ ...="sort-games-btn" (click)="[32mtoggleSortOptions[37m()">Sort Games</button>
-        ╵                               [32m~~~~~~~~~~~~~~~~~[0m
-
-  Error occurs in the template of component VideoGameListComponent.
-
-    src/app/video-game/video-game-list.component.ts:13:15:
-[37m      13 │   templateUrl: [32m'./video-game-list.component.html'[37m,
-         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    src/app/app.routes.ts:6:32:
+[37m      6 │ ... TvShowComponent } from [32m'./tv-show-main/tv-show/tv-show.component'[37m;
+        ╵                            [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
 
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.136 seconds]
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module './tv-show-main/tv-show/tv-show.component' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'toggleSortOptions' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/video-game/video-game-list.component.html:7:44:
-[37m      7 │ ...="sort-games-btn" (click)="[32mtoggleSortOptions[37m()">Sort Games</button>
-        ╵                               [32m~~~~~~~~~~~~~~~~~[0m
-
-  Error occurs in the template of component VideoGameListComponent.
-
-    src/app/video-game/video-game-list.component.ts:13:15:
-[37m      13 │   templateUrl: [32m'./video-game-list.component.html'[37m,
-         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    src/app/app.routes.ts:7:32:
+[37m      7 │ ... TvShowComponent } from [32m'./tv-show-main/tv-show/tv-show.component'[37m;
+        ╵                            [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'showSortOptions' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./tv-show-main/upload-tv-show/upload-tv-show.component"[0m
 
-    src/app/video-game/video-game-list.component.html:11:14:
-[37m      11 │   <div *ngIf="[32mshowSortOptions[37m" class="sort-container">
-         ╵               [32m~~~~~~~~~~~~~~~[0m
-
-  Error occurs in the template of component VideoGameListComponent.
-
-    src/app/video-game/video-game-list.component.ts:13:15:
-[37m      13 │   templateUrl: [32m'./video-game-list.component.html'[37m,
-         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    src/app/app.routes.ts:7:38:
+[37m      7 │ ...ent } from [32m'./tv-show-main/upload-tv-show/upload-tv-show.compone[37m...
+        ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
 
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'sortCriteria' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module './tv-show-main/upload-tv-show/upload-tv-show.component' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
 
-    src/app/video-game/video-game-list.component.html:13:43:
-[37m      13 │ ...="sortCriteria" [(ngModel)]="[32msortCriteria[37m" (change)="sortGames()">
-         ╵                                 [32m~~~~~~~~~~~~[0m
-
-  Error occurs in the template of component VideoGameListComponent.
-
-    src/app/video-game/video-game-list.component.ts:13:15:
-[37m      13 │   templateUrl: [32m'./video-game-list.component.html'[37m,
-         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'sortCriteria' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/video-game/video-game-list.component.html:13:43:
-[37m      13 │ ...="sortCriteria" [(ngModel)]="[32msortCriteria[37m" (change)="sortGames()">
-         ╵                                 [32m~~~~~~~~~~~~[0m
-
-  Error occurs in the template of component VideoGameListComponent.
-
-    src/app/video-game/video-game-list.component.ts:13:15:
-[37m      13 │   templateUrl: [32m'./video-game-list.component.html'[37m,
-         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'sortGames' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/video-game/video-game-list.component.html:13:67:
-[37m      13 │ ...="sortCriteria" [(ngModel)]="sortCriteria" (change)="[32msortGames[37m()">
-         ╵                                                         [32m~~~~~~~~~[0m
-
-  Error occurs in the template of component VideoGameListComponent.
-
-    src/app/video-game/video-game-list.component.ts:13:15:
-[37m      13 │   templateUrl: [32m'./video-game-list.component.html'[37m,
-         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Application bundle generation failed. [0.114 seconds]
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'toggleSortOptions' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/video-game/video-game-list.component.html:7:44:
-[37m      7 │ ...="sort-games-btn" (click)="[32mtoggleSortOptions[37m()">Sort Games</button>
-        ╵                               [32m~~~~~~~~~~~~~~~~~[0m
-
-  Error occurs in the template of component VideoGameListComponent.
-
-    src/app/video-game/video-game-list.component.ts:13:15:
-[37m      13 │   templateUrl: [32m'./video-game-list.component.html'[37m,
-         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
-
-
-[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'sortGames' does not exist on type 'VideoGameListComponent'.[0m [1m[35m[plugin angular-compiler][0m
-
-    src/app/video-game/video-game-list.component.html:13:67:
-[37m      13 │ ...="sortCriteria" [(ngModel)]="sortCriteria" (change)="[32msortGames[37m()">
-         ╵                                                         [32m~~~~~~~~~[0m
-
-  Error occurs in the template of component VideoGameListComponent.
-
-    src/app/video-game/video-game-list.component.ts:13:15:
-[37m      13 │   templateUrl: [32m'./video-game-list.component.html'[37m,
-         ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+    src/app/app.routes.ts:8:36:
+[37m      8 │ ...nent} from [32m'./tv-show-main/upload-tv-show/upload-tv-show.compone[37m...
+        ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
 
 
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
 Initial chunk files | Names         |  Raw size
+main.js             | main          | 111.79 kB | 
 polyfills.js        | polyfills     |  90.20 kB | 
-main.js             | main          |  34.89 kB | 
 styles.css          | styles        | 492 bytes | 
 
-                    | Initial total | 125.58 kB
+                    | Initial total | 202.48 kB
 
-Application bundle generation complete. [0.121 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 35.37 kB | 
-
-Application bundle generation complete. [0.090 seconds]
+Application bundle generation complete. [0.179 seconds]
 
 Page reload sent to client(s).
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 35.09 kB | 
+Application bundle generation failed. [0.101 seconds]
 
-Application bundle generation complete. [0.145 seconds]
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./video-game-main/video-game/video-game.component"[0m
+
+    src/app/app.routes.ts:2:35:
+[37m      2 │ ...mponent } from [32m'./video-game-main/video-game/video-game.component'[37m;
+        ╵                   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module './video-game-main/video-game/video-game.component' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.routes.ts:3:35:
+[37m      3 │ ...mponent } from [32m'./video-game-main/video-game/video-game.component'[37m;
+        ╵                   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./video-game-main/upload-video-game/upload-video-game.component"[0m
+
+    src/app/app.routes.ts:3:41:
+[37m      3 │ ...ent } from [32m'./video-game-main/upload-video-game/upload-video-gam[37m...
+        ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module './video-game-main/upload-video-game/upload-video-game.component' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.routes.ts:4:41:
+[37m      4 │ ...ent } from [32m'./video-game-main/upload-video-game/upload-video-gam[37m...
+        ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.066 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./video-game-main/video-game/video-game.component"[0m
+
+    src/app/app.routes.ts:2:35:
+[37m      2 │ ...mponent } from [32m'./video-game-main/video-game/video-game.component'[37m;
+        ╵                   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module './video-game-main/video-game/video-game.component' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.routes.ts:3:35:
+[37m      3 │ ...mponent } from [32m'./video-game-main/video-game/video-game.component'[37m;
+        ╵                   [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./video-game-main/upload-video-game/upload-video-game.component"[0m
+
+    src/app/app.routes.ts:3:41:
+[37m      3 │ ...ent } from [32m'./video-game-main/upload-video-game/upload-video-gam[37m...
+        ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module './video-game-main/upload-video-game/upload-video-game.component' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.routes.ts:4:41:
+[37m      4 │ ...ent } from [32m'./video-game-main/upload-video-game/upload-video-gam[37m...
+        ╵               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./movie-main/movie/movie.component"[0m
+
+    src/app/app.routes.ts:5:31:
+[37m      5 │ import { MovieComponent } from [32m'./movie-main/movie/movie.component'[37m;
+        ╵                                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module './movie-main/movie/movie.component' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.routes.ts:6:31:
+[37m      6 │ import { MovieComponent } from [32m'./movie-main/movie/movie.component'[37m;
+        ╵                                [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./movie-main/upload-movie/upload-movie.component"[0m
+
+    src/app/app.routes.ts:8:37:
+[37m      8 │ ...omponent } from [32m'./movie-main/upload-movie/upload-movie.component'[37m;
+        ╵                    [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module './movie-main/upload-movie/upload-movie.component' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.routes.ts:9:35:
+[37m      9 │ ...Component} from [32m'./movie-main/upload-movie/upload-movie.component'[37m;
+        ╵                    [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size
+main.js             | main          | 111.86 kB | 
+polyfills.js        | polyfills     |  90.20 kB | 
+styles.css          | styles        | 492 bytes | 
+
+                    | Initial total | 202.55 kB
+
+Application bundle generation complete. [0.381 seconds]
 
 Page reload sent to client(s).
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 35.12 kB | 
+Application bundle generation failed. [0.198 seconds]
 
-Application bundle generation complete. [0.114 seconds]
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mCould not resolve "./book-main/book/book.component"[0m
+
+    src/app/app.routes.ts:4:30:
+[37m      4 │ import { BookComponent } from [32m'./book-main/book/book.component'[37m;
+        ╵                               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2307: Cannot find module './book-main/book/book.component' or its corresponding type declarations.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/app.routes.ts:5:30:
+[37m      5 │ import { BookComponent } from [32m'./book-main/book/book.component'[37m;
+        ╵                               [32m~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size
+main.js             | main          | 111.88 kB | 
+polyfills.js        | polyfills     |  90.20 kB | 
+styles.css          | styles        | 492 bytes | 
+
+                    | Initial total | 202.58 kB
+
+Application bundle generation complete. [0.175 seconds]
 
 Page reload sent to client(s).
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 35.71 kB | 
+Initial chunk files | Names |  Raw size
+main.js             | main  | 124.22 kB | 
 
-Application bundle generation complete. [0.120 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 35.68 kB | 
-
-Application bundle generation complete. [0.112 seconds]
+Application bundle generation complete. [0.169 seconds]
 
 Page reload sent to client(s).
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 35.70 kB | 
+Application bundle generation failed. [0.113 seconds]
 
-Application bundle generation complete. [0.121 seconds]
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'totalBooks' does not exist on type 'HomeComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/home/home.component.html:5:42:
+[37m      5 │     <p class="total-item">Total Books: {{ [32mtotalBooks[37m }}</p>
+        ╵                                           [32m~~~~~~~~~~[0m
+
+  Error occurs in the template of component HomeComponent.
+
+    src/app/home/home.component.ts:8:15:
+[37m      8 │   templateUrl: [32m'./home.component.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'totalMovies' does not exist on type 'HomeComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/home/home.component.html:6:43:
+[37m      6 │     <p class="total-item">Total Movies: {{ [32mtotalMovies[37m }}</p>
+        ╵                                            [32m~~~~~~~~~~~[0m
+
+  Error occurs in the template of component HomeComponent.
+
+    src/app/home/home.component.ts:8:15:
+[37m      8 │   templateUrl: [32m'./home.component.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'totalTvShows' does not exist on type 'HomeComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/home/home.component.html:7:45:
+[37m      7 │     <p class="total-item">Total TV Shows: {{ [32mtotalTvShows[37m }}</p>
+        ╵                                              [32m~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component HomeComponent.
+
+    src/app/home/home.component.ts:8:15:
+[37m      8 │   templateUrl: [32m'./home.component.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mNG9: Property 'totalVideoGames' does not exist on type 'HomeComponent'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/home/home.component.html:8:48:
+[37m      8 │     <p class="total-item">Total Video Games: {{ [32mtotalVideoGames[37m }}</p>
+        ╵                                                 [32m~~~~~~~~~~~~~~~[0m
+
+  Error occurs in the template of component HomeComponent.
+
+    src/app/home/home.component.ts:8:15:
+[37m      8 │   templateUrl: [32m'./home.component.html'[37m,
+        ╵                [32m~~~~~~~~~~~~~~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Application bundle generation failed. [0.130 seconds]
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS-992003: No suitable injection token for parameter 'bookService' of class 'HomeComponent'.
+  Consider using the @Inject decorator to specify an injection token.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/home/home.component.ts:20:12:
+[37m      20 │     private [32mbookService[37m: BookService,
+         ╵             [32m~~~~~~~~~~~[0m
+
+  This type does not have a value, so it cannot be used as injection token.
+
+    src/app/home/home.component.ts:20:25:
+[37m      20 │     private bookService: [32mBookService[37m,
+         ╵                          [32m~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'BookService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/home/home.component.ts:20:25:
+[37m      20 │     private bookService: [32mBookService[37m,
+         ╵                          [32m~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'MovieService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/home/home.component.ts:21:26:
+[37m      21 │     private movieService: [32mMovieService[37m,
+         ╵                           [32m~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'TvShowService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/home/home.component.ts:22:27:
+[37m      22 │     private tvShowService: [32mTvShowService[37m,
+         ╵                            [32m~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS2304: Cannot find name 'VideoGameService'.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/home/home.component.ts:23:30:
+[37m      23 │     private videoGameService: [32mVideoGameService[37m
+         ╵                               [32m~~~~~~~~~~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'books' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/home/home.component.ts:27:46:
+[37m      27 │     this.bookService.getAllBooks().subscribe(([32mbooks[37m) => {
+         ╵                                               [32m~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'movies' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/home/home.component.ts:31:48:
+[37m      31 │     this.movieService.getAllMovies().subscribe(([32mmovies[37m) => {
+         ╵                                                 [32m~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'tvShows' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/home/home.component.ts:35:50:
+[37m      35 │     this.tvShowService.getAllTvShows().subscribe(([32mtvShows[37m) => {
+         ╵                                                   [32m~~~~~~~[0m
+
+
+[31m✘ [41;31m[[41;97mERROR[41;31m][0m [1mTS7006: Parameter 'videoGames' implicitly has an 'any' type.[0m [1m[35m[plugin angular-compiler][0m
+
+    src/app/home/home.component.ts:39:56:
+[37m      39 │ ...is.videoGameService.getAllVideoGames().subscribe(([32mvideoGames[37m) => {
+         ╵                                                      [32m~~~~~~~~~~[0m
+
+
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names         |  Raw size
+main.js             | main          | 126.11 kB | 
+polyfills.js        | polyfills     |  90.20 kB | 
+styles.css          | styles        | 492 bytes | 
+
+                    | Initial total | 216.80 kB
+
+Application bundle generation complete. [0.079 seconds]
 
 Page reload sent to client(s).
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 35.70 kB | 
+Initial chunk files | Names |  Raw size
+main.js             | main  | 128.87 kB | 
 
-Application bundle generation complete. [0.111 seconds]
+Application bundle generation complete. [0.072 seconds]
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mUnexpected "<"[0m [1m[35m[plugin angular-compiler][0m [css-syntax-error]
+
+    src/app/home/home.component.css:1:0:
+[37m      1 │ [32m<[37mdiv class="content-container">
+        ╵ [32m^[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mUnexpected "{"[0m [1m[35m[plugin angular-compiler][0m [css-syntax-error]
+
+    src/app/home/home.component.css:10:26:
+[37m      10 │ <p class="game-platform">{[32m{[37m totalBooks }}</p>
+         ╵                           [32m^[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mExpected ":"[0m [1m[35m[plugin angular-compiler][0m [css-syntax-error]
+
+    src/app/home/home.component.css:10:38:
+[37m      10 │ <p class="game-platform">{{ totalBooks[32m[37m }}</p>
+         │                                       [32m^[37m
+         ╵                                       [32m:[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mUnexpected "<"[0m [1m[35m[plugin angular-compiler][0m [css-syntax-error]
+
+    src/app/home/home.component.css:10:41:
+[37m      10 │ <p class="game-platform">{{ totalBooks }}[32m<[37m/p>
+         ╵                                          [32m^[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mUnexpected "{"[0m [1m[35m[plugin angular-compiler][0m [css-syntax-error]
+
+    src/app/home/home.component.css:19:26:
+[37m      19 │ <p class="game-platform">{[32m{[37m totalMovies }}</p>
+         ╵                           [32m^[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mExpected ":"[0m [1m[35m[plugin angular-compiler][0m [css-syntax-error]
+
+    src/app/home/home.component.css:19:39:
+[37m      19 │ <p class="game-platform">{{ totalMovies[32m[37m }}</p>
+         │                                        [32m^[37m
+         ╵                                        [32m:[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mUnexpected "<"[0m [1m[35m[plugin angular-compiler][0m [css-syntax-error]
+
+    src/app/home/home.component.css:19:42:
+[37m      19 │ <p class="game-platform">{{ totalMovies }}[32m<[37m/p>
+         ╵                                           [32m^[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mUnexpected "{"[0m [1m[35m[plugin angular-compiler][0m [css-syntax-error]
+
+    src/app/home/home.component.css:28:26:
+[37m      28 │ <p class="game-platform">{[32m{[37m totalTvShows }}</p>
+         ╵                           [32m^[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mExpected ":"[0m [1m[35m[plugin angular-compiler][0m [css-syntax-error]
+
+    src/app/home/home.component.css:28:40:
+[37m      28 │ <p class="game-platform">{{ totalTvShows[32m[37m }}</p>
+         │                                         [32m^[37m
+         ╵                                         [32m:[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mUnexpected "<"[0m [1m[35m[plugin angular-compiler][0m [css-syntax-error]
+
+    src/app/home/home.component.css:28:43:
+[37m      28 │ <p class="game-platform">{{ totalTvShows }}[32m<[37m/p>
+         ╵                                            [32m^[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mUnexpected "{"[0m [1m[35m[plugin angular-compiler][0m [css-syntax-error]
+
+    src/app/home/home.component.css:37:26:
+[37m      37 │ <p class="game-platform">{[32m{[37m totalVideoGames }}</p>
+         ╵                           [32m^[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mExpected ":"[0m [1m[35m[plugin angular-compiler][0m [css-syntax-error]
+
+    src/app/home/home.component.css:37:43:
+[37m      37 │ <p class="game-platform">{{ totalVideoGames[32m[37m }}</p>
+         │                                            [32m^[37m
+         ╵                                            [32m:[0m
+
+
+[33m▲ [43;33m[[43;30mWARNING[43;33m][0m [1mUnexpected "<"[0m [1m[35m[plugin angular-compiler][0m [css-syntax-error]
+
+    src/app/home/home.component.css:37:46:
+[37m      37 │ <p class="game-platform">{{ totalVideoGames }}[32m<[37m/p>
+         ╵                                               [32m^[0m
+
 
 Page reload sent to client(s).
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 35.70 kB | 
-
-Application bundle generation complete. [0.129 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 35.70 kB | 
-
-Application bundle generation complete. [0.110 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 35.70 kB | 
-
-Application bundle generation complete. [0.105 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 35.70 kB | 
-
-Application bundle generation complete. [0.112 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 35.73 kB | 
-
-Application bundle generation complete. [0.073 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 35.77 kB | 
+Initial chunk files | Names |  Raw size
+main.js             | main  | 126.11 kB | 
 
 Application bundle generation complete. [0.077 seconds]
 
 Page reload sent to client(s).
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 35.77 kB | 
-
-Application bundle generation complete. [0.100 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 35.79 kB | 
-
-Application bundle generation complete. [0.096 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 35.81 kB | 
-
-Application bundle generation complete. [0.121 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 35.81 kB | 
-
-Application bundle generation complete. [0.095 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 35.81 kB | 
-
-Application bundle generation complete. [0.105 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-
-No output file changes.
-
-Application bundle generation complete. [0.080 seconds]
-
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 35.81 kB | 
-
-Application bundle generation complete. [0.109 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 35.89 kB | 
-
-Application bundle generation complete. [0.101 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 35.88 kB | 
-
-Application bundle generation complete. [0.097 seconds]
-
-Page reload sent to client(s).
-❯ Changes detected. Rebuilding...
-✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 35.86 kB | 
+Initial chunk files | Names |  Raw size
+main.js             | main  | 126.81 kB | 
 
 Application bundle generation complete. [0.090 seconds]
 
 Page reload sent to client(s).
 ❯ Changes detected. Rebuilding...
 ✔ Changes detected. Rebuilding...
-Initial chunk files | Names | Raw size
-main.js             | main  | 35.88 kB | 
+Initial chunk files | Names |  Raw size
+main.js             | main  | 128.09 kB | 
 
-Application bundle generation complete. [0.113 seconds]
+Application bundle generation complete. [0.103 seconds]
+
+Page reload sent to client(s).
+❯ Changes detected. Rebuilding...
+✔ Changes detected. Rebuilding...
+Initial chunk files | Names |  Raw size
+main.js             | main  | 128.11 kB | 
+
+Application bundle generation complete. [0.071 seconds]
 
 Page reload sent to client(s).

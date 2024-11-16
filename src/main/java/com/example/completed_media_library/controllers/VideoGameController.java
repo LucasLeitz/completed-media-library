@@ -1,8 +1,6 @@
 package com.example.completed_media_library.controllers;
 
 import com.example.completed_media_library.dtos.VideoGameDTO;
-import com.example.completed_media_library.entities.VideoGame;
-import com.example.completed_media_library.repositories.VideoGameRepository;
 import com.example.completed_media_library.services.VideoGameService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -21,30 +19,25 @@ public class VideoGameController {
     @Autowired
     private final VideoGameService videoGameService;
 
-    @Autowired
-    private VideoGameRepository videoGameRepository;
-
-    public VideoGameController(VideoGameService videoGameService, VideoGameRepository videoGameRepository) {
+    public VideoGameController(VideoGameService videoGameService) {
         this.videoGameService = videoGameService;
-        this.videoGameRepository = videoGameRepository;
     }
 
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteVideoGame(@PathVariable Long id) {
-        videoGameService.deleteVideoGameById(id);
+        this.videoGameService.deleteById(id);
         return ResponseEntity.noContent().build();
     }
 
     @PostMapping
     public ResponseEntity<VideoGameDTO> addVideoGame(@RequestBody VideoGameDTO videoGameDTO) {
-        VideoGameDTO savedVideoGame = videoGameService.saveVideoGame(videoGameDTO);
-        System.out.println("Completed Date in Controller: " + videoGameDTO.getCompletedDate());
+        VideoGameDTO savedVideoGame = videoGameService.save(videoGameDTO);
         return ResponseEntity.status(HttpStatus.CREATED).body(savedVideoGame);
     }
 
     @GetMapping
-    public List<VideoGame> getAllVideoGames() {
-        return videoGameService.getAllVideoGames();
+    public List<VideoGameDTO> getAllVideoGames() {
+        return videoGameService.getAll();
     }
 
     @GetMapping("/searchWikipediaImage")
