@@ -64,4 +64,10 @@ public class BookController {
         }
         return responseMap;
     }
+
+    @GetMapping("/completed/count/{year}")
+    public ResponseEntity<Long> getCompletedBookCount(@PathVariable int year) {
+        long count = bookService.getCompletedItemsForYear(year).size();
+        return ResponseEntity.ok(count);
+    }
 }

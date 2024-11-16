@@ -41,11 +41,29 @@
   </div>
 
   <div class="stats-section">
+
     <h2>Statistics for {{ currentYear }}</h2>
+
     <p *ngIf="completedVideoGamesCount !== null">
       Completed Video Games: {{ completedVideoGamesCount }}
     </p>
-    <p *ngIf="completedVideoGamesCount === null">Loading...</p>
+    <p *ngIf="completedVideoGamesCount === null">Loading Video Games...</p>
+
+    <p *ngIf="completedBooksCount !== null">
+      Completed Books: {{ completedBooksCount }}
+    </p>
+    <p *ngIf="completedBooksCount === null">Loading Books...</p>
+
+    <p *ngIf="completedMoviesCount !== null">
+      Completed Movies: {{ completedMoviesCount }}
+    </p>
+    <p *ngIf="completedMoviesCount === null">Loading Movies...</p>
+
+    <p *ngIf="completedTvShowsCount !== null">
+      Completed Tv Shows: {{ completedTvShowsCount }}
+    </p>
+    <p *ngIf="completedTvShowsCount === null">Loading Tv Shows...</p>
+
   </div>
 
 </div>

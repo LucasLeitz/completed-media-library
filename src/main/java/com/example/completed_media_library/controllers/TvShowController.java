@@ -64,4 +64,11 @@ public class TvShowController {
         }
         return responseMap;
     }
+
+    @GetMapping("/completed/count/{year}")
+    public ResponseEntity<Long> getCompletedTvShowCount(@PathVariable int year) {
+        long count = tvShowService.getCompletedItemsForYear(year).size();
+        return ResponseEntity.ok(count);
+    }
+
 }

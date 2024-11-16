@@ -28,4 +28,8 @@ export class TvShowService {
   deleteTvShow(id: number): Observable<void> {
     return this.http.delete<void>(`${this.baseUrl}/${id}`);
   }
+
+  getCompletedCountForYear(year: number): Observable<number> {
+    return this.http.get<number>(`${this.baseUrl}/completed/count/${year}`);
+  }
 }

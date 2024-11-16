@@ -12,161 +12,168 @@
 [INFO] Copying 1 resource from src/main/resources to target/classes
 [INFO] 
 [INFO] --- compiler:3.13.0:compile (default-compile) @ completed-media-library ---
-[INFO] Nothing to compile - all classes are up to date.
-[INFO] 
-[INFO] --- resources:3.3.1:testResources (default-testResources) @ completed-media-library ---
-[INFO] skip non existing resourceDirectory /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/test/resources
-[INFO] 
-[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ completed-media-library ---
-[INFO] Nothing to compile - all classes are up to date.
-[INFO] 
-[INFO] <<< spring-boot:3.3.5:run (default-cli) < test-compile @ completed-media-library <<<
-[INFO] 
-[INFO] 
-[INFO] --- spring-boot:3.3.5:run (default-cli) @ completed-media-library ---
-[INFO] Attaching agents: []
-
-  .   ____          _            __ _ _
- /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
-( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
- \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
-  '  |____| .__|_| |_|_| |_\__, | / / / /
- =========|_|==============|___/=/_/_/_/
-
- :: Spring Boot ::                (v3.3.5)
-
-2024-11-15T22:03:35.571-05:00  INFO 21781 --- [           main] c.e.c.CompletedMediaLibraryApplication   : Starting CompletedMediaLibraryApplication using Java 23.0.1 with PID 21781 (/Users/lucasleitz/Desktop/SpringProjects/completed-media-library/target/classes started by lucasleitz in /Users/lucasleitz/Desktop/SpringProjects/completed-media-library)
-2024-11-15T22:03:35.573-05:00  INFO 21781 --- [           main] c.e.c.CompletedMediaLibraryApplication   : No active profile set, falling back to 1 default profile: "default"
-2024-11-15T22:03:35.851-05:00  INFO 21781 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-11-15T22:03:35.876-05:00  INFO 21781 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 22 ms. Found 4 JPA repository interfaces.
-2024-11-15T22:03:36.118-05:00  INFO 21781 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-11-15T22:03:36.124-05:00  INFO 21781 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-11-15T22:03:36.125-05:00  INFO 21781 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-11-15T22:03:36.145-05:00  INFO 21781 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-11-15T22:03:36.145-05:00  INFO 21781 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 545 ms
-2024-11-15T22:03:36.216-05:00  INFO 21781 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-11-15T22:03:36.244-05:00  INFO 21781 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
-2024-11-15T22:03:36.261-05:00  INFO 21781 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-11-15T22:03:36.469-05:00  INFO 21781 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-11-15T22:03:36.484-05:00  INFO 21781 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-11-15T22:03:36.584-05:00  INFO 21781 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@25ae1f80
-2024-11-15T22:03:36.585-05:00  INFO 21781 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-11-15T22:03:36.645-05:00  WARN 21781 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
-2024-11-15T22:03:36.645-05:00  WARN 21781 --- [           main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
-2024-11-15T22:03:37.107-05:00  INFO 21781 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-11-15T22:03:37.127-05:00  INFO 21781 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-11-15T22:03:37.233-05:00  WARN 21781 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-11-15T22:03:37.360-05:00  INFO 21781 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-11-15T22:03:37.363-05:00  INFO 21781 --- [           main] c.e.c.CompletedMediaLibraryApplication   : Started CompletedMediaLibraryApplication in 1.938 seconds (process running for 2.12)
-2024-11-15T22:03:37.486-05:00  INFO 21781 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
-2024-11-15T22:03:37.487-05:00  INFO 21781 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
-2024-11-15T22:03:37.487-05:00  INFO 21781 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
-Hibernate: select vg1_0.id,vg1_0.completed_date,vg1_0.image_url,vg1_0.platform,vg1_0.title from video_games vg1_0
-Hibernate: select vg1_0.id,vg1_0.completed_date,vg1_0.image_url,vg1_0.platform,vg1_0.title from video_games vg1_0
-Hibernate: insert into video_games (completed_date,image_url,platform,title) values (?,?,?,?)
-Hibernate: select vg1_0.id,vg1_0.completed_date,vg1_0.image_url,vg1_0.platform,vg1_0.title from video_games vg1_0
-Hibernate: select count(*) from video_games vg1_0 where vg1_0.id=?
-Hibernate: select vg1_0.id,vg1_0.completed_date,vg1_0.image_url,vg1_0.platform,vg1_0.title from video_games vg1_0 where vg1_0.id=?
-Hibernate: delete from video_games where id=?
-Hibernate: insert into video_games (completed_date,image_url,platform,title) values (?,?,?,?)
-Hibernate: select vg1_0.id,vg1_0.completed_date,vg1_0.image_url,vg1_0.platform,vg1_0.title from video_games vg1_0
-Hibernate: select ts1_0.id,ts1_0.completed_date,ts1_0.image_url,ts1_0.title from tv_shows ts1_0
-Hibernate: select ts1_0.id,ts1_0.completed_date,ts1_0.image_url,ts1_0.title from tv_shows ts1_0
-Hibernate: select ts1_0.id,ts1_0.completed_date,ts1_0.image_url,ts1_0.title from tv_shows ts1_0
-Hibernate: select vg1_0.id,vg1_0.completed_date,vg1_0.image_url,vg1_0.platform,vg1_0.title from video_games vg1_0
-Hibernate: select ts1_0.id,ts1_0.completed_date,ts1_0.image_url,ts1_0.title from tv_shows ts1_0
-Hibernate: select ts1_0.id,ts1_0.completed_date,ts1_0.image_url,ts1_0.title from tv_shows ts1_0
-Hibernate: insert into tv_shows (completed_date,image_url,title) values (?,?,?)
-Hibernate: select ts1_0.id,ts1_0.completed_date,ts1_0.image_url,ts1_0.title from tv_shows ts1_0
-Hibernate: select count(*) from tv_shows ts1_0 where ts1_0.id=?
-Hibernate: select ts1_0.id,ts1_0.completed_date,ts1_0.image_url,ts1_0.title from tv_shows ts1_0 where ts1_0.id=?
-Hibernate: delete from tv_shows where id=?
-Hibernate: select vg1_0.id,vg1_0.completed_date,vg1_0.image_url,vg1_0.platform,vg1_0.title from video_games vg1_0
-Hibernate: select vg1_0.id,vg1_0.completed_date,vg1_0.image_url,vg1_0.platform,vg1_0.title from video_games vg1_0
-Hibernate: select m1_0.id,m1_0.completed_date,m1_0.image_url,m1_0.title from movies m1_0
-Hibernate: select m1_0.id,m1_0.completed_date,m1_0.image_url,m1_0.title from movies m1_0
-Hibernate: insert into movies (completed_date,image_url,title) values (?,?,?)
-Hibernate: select m1_0.id,m1_0.completed_date,m1_0.image_url,m1_0.title from movies m1_0
-Hibernate: select b1_0.id,b1_0.completed_date,b1_0.image_url,b1_0.title from books b1_0
-Hibernate: select m1_0.id,m1_0.completed_date,m1_0.image_url,m1_0.title from movies m1_0
-Hibernate: select b1_0.id,b1_0.completed_date,b1_0.image_url,b1_0.title from books b1_0
-Hibernate: select b1_0.id,b1_0.completed_date,b1_0.image_url,b1_0.title from books b1_0
-Hibernate: select b1_0.id,b1_0.completed_date,b1_0.image_url,b1_0.title from books b1_0
-Hibernate: select m1_0.id,m1_0.completed_date,m1_0.image_url,m1_0.title from movies m1_0
-Hibernate: select ts1_0.id,ts1_0.completed_date,ts1_0.image_url,ts1_0.title from tv_shows ts1_0
-Hibernate: select b1_0.id,b1_0.completed_date,b1_0.image_url,b1_0.title from books b1_0
-Hibernate: select vg1_0.id,vg1_0.completed_date,vg1_0.image_url,vg1_0.platform,vg1_0.title from video_games vg1_0
-Hibernate: select ts1_0.id,ts1_0.completed_date,ts1_0.image_url,ts1_0.title from tv_shows ts1_0
-Hibernate: insert into tv_shows (completed_date,image_url,title) values (?,?,?)
-Hibernate: select ts1_0.id,ts1_0.completed_date,ts1_0.image_url,ts1_0.title from tv_shows ts1_0
-Hibernate: select m1_0.id,m1_0.completed_date,m1_0.image_url,m1_0.title from movies m1_0
-Hibernate: select vg1_0.id,vg1_0.completed_date,vg1_0.image_url,vg1_0.platform,vg1_0.title from video_games vg1_0
-Hibernate: select ts1_0.id,ts1_0.completed_date,ts1_0.image_url,ts1_0.title from tv_shows ts1_0
-Hibernate: select ts1_0.id,ts1_0.completed_date,ts1_0.image_url,ts1_0.title from tv_shows ts1_0
-Hibernate: select m1_0.id,m1_0.completed_date,m1_0.image_url,m1_0.title from movies m1_0
-Hibernate: select b1_0.id,b1_0.completed_date,b1_0.image_url,b1_0.title from books b1_0
-Hibernate: select vg1_0.id,vg1_0.completed_date,vg1_0.image_url,vg1_0.platform,vg1_0.title from video_games vg1_0
-Hibernate: select b1_0.id,b1_0.completed_date,b1_0.image_url,b1_0.title from books b1_0
-Hibernate: select m1_0.id,m1_0.completed_date,m1_0.image_url,m1_0.title from movies m1_0
-Hibernate: select ts1_0.id,ts1_0.completed_date,ts1_0.image_url,ts1_0.title from tv_shows ts1_0
-Hibernate: select m1_0.id,m1_0.completed_date,m1_0.image_url,m1_0.title from movies m1_0
-Hibernate: select b1_0.id,b1_0.completed_date,b1_0.image_url,b1_0.title from books b1_0
-Hibernate: select vg1_0.id,vg1_0.completed_date,vg1_0.image_url,vg1_0.platform,vg1_0.title from video_games vg1_0
-Hibernate: select b1_0.id,b1_0.completed_date,b1_0.image_url,b1_0.title from books b1_0
-Hibernate: select vg1_0.id,vg1_0.completed_date,vg1_0.image_url,vg1_0.platform,vg1_0.title from video_games vg1_0
-Hibernate: select b1_0.id,b1_0.completed_date,b1_0.image_url,b1_0.title from books b1_0
-Hibernate: select b1_0.id,b1_0.completed_date,b1_0.image_url,b1_0.title from books b1_0
-Hibernate: insert into books (completed_date,image_url,title) values (?,?,?)
-Hibernate: select b1_0.id,b1_0.completed_date,b1_0.image_url,b1_0.title from books b1_0
-Hibernate: select vg1_0.id,vg1_0.completed_date,vg1_0.image_url,vg1_0.platform,vg1_0.title from video_games vg1_0
-Hibernate: select b1_0.id,b1_0.completed_date,b1_0.image_url,b1_0.title from books b1_0
-Hibernate: select m1_0.id,m1_0.completed_date,m1_0.image_url,m1_0.title from movies m1_0
-Hibernate: select b1_0.id,b1_0.completed_date,b1_0.image_url,b1_0.title from books b1_0
-Hibernate: select m1_0.id,m1_0.completed_date,m1_0.image_url,m1_0.title from movies m1_0
-Hibernate: select ts1_0.id,ts1_0.completed_date,ts1_0.image_url,ts1_0.title from tv_shows ts1_0
-Hibernate: select b1_0.id,b1_0.completed_date,b1_0.image_url,b1_0.title from books b1_0
-Hibernate: select count(*) from books b1_0 where b1_0.id=?
-Hibernate: select b1_0.id,b1_0.completed_date,b1_0.image_url,b1_0.title from books b1_0 where b1_0.id=?
-Hibernate: delete from books where id=?
-Hibernate: insert into books (completed_date,image_url,title) values (?,?,?)
-Hibernate: select b1_0.id,b1_0.completed_date,b1_0.image_url,b1_0.title from books b1_0
-Hibernate: select vg1_0.id,vg1_0.completed_date,vg1_0.image_url,vg1_0.platform,vg1_0.title from video_games vg1_0
-Hibernate: select vg1_0.id,vg1_0.completed_date,vg1_0.image_url,vg1_0.platform,vg1_0.title from video_games vg1_0
-Hibernate: select b1_0.id,b1_0.completed_date,b1_0.image_url,b1_0.title from books b1_0
-Hibernate: select b1_0.id,b1_0.completed_date,b1_0.image_url,b1_0.title from books b1_0
-Hibernate: select ts1_0.id,ts1_0.completed_date,ts1_0.image_url,ts1_0.title from tv_shows ts1_0
-Hibernate: select m1_0.id,m1_0.completed_date,m1_0.image_url,m1_0.title from movies m1_0
-Hibernate: select vg1_0.id,vg1_0.completed_date,vg1_0.image_url,vg1_0.platform,vg1_0.title from video_games vg1_0
-Hibernate: select b1_0.id,b1_0.completed_date,b1_0.image_url,b1_0.title from books b1_0
-Hibernate: select m1_0.id,m1_0.completed_date,m1_0.image_url,m1_0.title from movies m1_0
-Hibernate: select ts1_0.id,ts1_0.completed_date,ts1_0.image_url,ts1_0.title from tv_shows ts1_0
-Hibernate: select vg1_0.id,vg1_0.completed_date,vg1_0.image_url,vg1_0.platform,vg1_0.title from video_games vg1_0
-Hibernate: select m1_0.id,m1_0.completed_date,m1_0.image_url,m1_0.title from movies m1_0
-Hibernate: select vg1_0.id,vg1_0.completed_date,vg1_0.image_url,vg1_0.platform,vg1_0.title from video_games vg1_0
-Hibernate: select b1_0.id,b1_0.completed_date,b1_0.image_url,b1_0.title from books b1_0
-Hibernate: select ts1_0.id,ts1_0.completed_date,ts1_0.image_url,ts1_0.title from tv_shows ts1_0
-Hibernate: select ts1_0.id,ts1_0.completed_date,ts1_0.image_url,ts1_0.title from tv_shows ts1_0
-Hibernate: select b1_0.id,b1_0.completed_date,b1_0.image_url,b1_0.title from books b1_0
-Hibernate: select m1_0.id,m1_0.completed_date,m1_0.image_url,m1_0.title from movies m1_0
-Hibernate: select vg1_0.id,vg1_0.completed_date,vg1_0.image_url,vg1_0.platform,vg1_0.title from video_games vg1_0
-Hibernate: select m1_0.id,m1_0.completed_date,m1_0.image_url,m1_0.title from movies m1_0
-Hibernate: select ts1_0.id,ts1_0.completed_date,ts1_0.image_url,ts1_0.title from tv_shows ts1_0
-Hibernate: select vg1_0.id,vg1_0.completed_date,vg1_0.image_url,vg1_0.platform,vg1_0.title from video_games vg1_0
-Hibernate: select b1_0.id,b1_0.completed_date,b1_0.image_url,b1_0.title from books b1_0
-Hibernate: select vg1_0.id,vg1_0.completed_date,vg1_0.image_url,vg1_0.platform,vg1_0.title from video_games vg1_0
-Hibernate: select b1_0.id,b1_0.completed_date,b1_0.image_url,b1_0.title from books b1_0
-Hibernate: select ts1_0.id,ts1_0.completed_date,ts1_0.image_url,ts1_0.title from tv_shows ts1_0
-Hibernate: select m1_0.id,m1_0.completed_date,m1_0.image_url,m1_0.title from movies m1_0
-Hibernate: select vg1_0.id,vg1_0.completed_date,vg1_0.image_url,vg1_0.platform,vg1_0.title from video_games vg1_0
-Hibernate: select m1_0.id,m1_0.completed_date,m1_0.image_url,m1_0.title from movies m1_0
-Hibernate: select b1_0.id,b1_0.completed_date,b1_0.image_url,b1_0.title from books b1_0
-Hibernate: select ts1_0.id,ts1_0.completed_date,ts1_0.image_url,ts1_0.title from tv_shows ts1_0
-Hibernate: select vg1_0.id,vg1_0.completed_date,vg1_0.image_url,vg1_0.platform,vg1_0.title from video_games vg1_0
-Hibernate: insert into video_games (completed_date,image_url,platform,title) values (?,?,?,?)
-Hibernate: select vg1_0.id,vg1_0.completed_date,vg1_0.image_url,vg1_0.platform,vg1_0.title from video_games vg1_0
-Hibernate: select m1_0.id,m1_0.completed_date,m1_0.image_url,m1_0.title from movies m1_0
-Hibernate: select m1_0.id,m1_0.completed_date,m1_0.image_url,m1_0.title from movies m1_0
-Hibernate: select b1_0.id,b1_0.completed_date,b1_0.image_url,b1_0.title from books b1_0
-Hibernate: select vg1_0.id,vg1_0.completed_date,vg1_0.image_url,vg1_0.platform,vg1_0.title from video_games vg1_0
-Hibernate: select ts1_0.id,ts1_0.completed_date,ts1_0.image_url,ts1_0.title from tv_shows ts1_0
-Hibernate: select m1_0.id,m1_0.completed_date,m1_0.image_url,m1_0.title from movies m1_0
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 24 source files with javac [debug parameters release 23] to target/classes
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/BookService.java:[23,23] cannot find symbol
+  symbol:   method getId()
+  location: variable book of type com.example.completed_media_library.entities.Book
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/BookService.java:[24,26] cannot find symbol
+  symbol:   method getTitle()
+  location: variable book of type com.example.completed_media_library.entities.Book
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/BookService.java:[25,29] cannot find symbol
+  symbol:   method getImageUrl()
+  location: variable book of type com.example.completed_media_library.entities.Book
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/BookService.java:[26,34] cannot find symbol
+  symbol:   method getCompletedDate()
+  location: variable book of type com.example.completed_media_library.entities.Book
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/BookService.java:[33,13] cannot find symbol
+  symbol:   method setId(java.lang.Long)
+  location: variable book of type com.example.completed_media_library.entities.Book
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/BookService.java:[34,13] cannot find symbol
+  symbol:   method setTitle(java.lang.String)
+  location: variable book of type com.example.completed_media_library.entities.Book
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/BookService.java:[35,13] cannot find symbol
+  symbol:   method setImageUrl(java.lang.String)
+  location: variable book of type com.example.completed_media_library.entities.Book
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/BookService.java:[36,13] cannot find symbol
+  symbol:   method setCompletedDate(java.time.LocalDate)
+  location: variable book of type com.example.completed_media_library.entities.Book
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/MovieService.java:[23,24] cannot find symbol
+  symbol:   method getId()
+  location: variable movie of type com.example.completed_media_library.entities.Movie
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/MovieService.java:[24,27] cannot find symbol
+  symbol:   method getTitle()
+  location: variable movie of type com.example.completed_media_library.entities.Movie
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/MovieService.java:[25,30] cannot find symbol
+  symbol:   method getImageUrl()
+  location: variable movie of type com.example.completed_media_library.entities.Movie
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/MovieService.java:[26,35] cannot find symbol
+  symbol:   method getCompletedDate()
+  location: variable movie of type com.example.completed_media_library.entities.Movie
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/MovieService.java:[33,14] cannot find symbol
+  symbol:   method setId(java.lang.Long)
+  location: variable movie of type com.example.completed_media_library.entities.Movie
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/MovieService.java:[34,14] cannot find symbol
+  symbol:   method setTitle(java.lang.String)
+  location: variable movie of type com.example.completed_media_library.entities.Movie
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/MovieService.java:[35,14] cannot find symbol
+  symbol:   method setImageUrl(java.lang.String)
+  location: variable movie of type com.example.completed_media_library.entities.Movie
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/MovieService.java:[36,14] cannot find symbol
+  symbol:   method setCompletedDate(java.time.LocalDate)
+  location: variable movie of type com.example.completed_media_library.entities.Movie
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/TvShowService.java:[23,25] cannot find symbol
+  symbol:   method getId()
+  location: variable tvShow of type com.example.completed_media_library.entities.TvShow
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/TvShowService.java:[24,28] cannot find symbol
+  symbol:   method getTitle()
+  location: variable tvShow of type com.example.completed_media_library.entities.TvShow
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/TvShowService.java:[25,31] cannot find symbol
+  symbol:   method getImageUrl()
+  location: variable tvShow of type com.example.completed_media_library.entities.TvShow
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/TvShowService.java:[26,36] cannot find symbol
+  symbol:   method getCompletedDate()
+  location: variable tvShow of type com.example.completed_media_library.entities.TvShow
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/TvShowService.java:[33,15] cannot find symbol
+  symbol:   method setId(java.lang.Long)
+  location: variable tvShow of type com.example.completed_media_library.entities.TvShow
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/TvShowService.java:[34,15] cannot find symbol
+  symbol:   method setTitle(java.lang.String)
+  location: variable tvShow of type com.example.completed_media_library.entities.TvShow
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/TvShowService.java:[35,15] cannot find symbol
+  symbol:   method setImageUrl(java.lang.String)
+  location: variable tvShow of type com.example.completed_media_library.entities.TvShow
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/TvShowService.java:[36,15] cannot find symbol
+  symbol:   method setCompletedDate(java.time.LocalDate)
+  location: variable tvShow of type com.example.completed_media_library.entities.TvShow
+[INFO] 24 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  0.970 s
+[INFO] Finished at: 2024-11-16T11:32:33-05:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.13.0:compile (default-compile) on project completed-media-library: Compilation failure: Compilation failure: 
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/BookService.java:[23,23] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable book of type com.example.completed_media_library.entities.Book
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/BookService.java:[24,26] cannot find symbol
+[ERROR]   symbol:   method getTitle()
+[ERROR]   location: variable book of type com.example.completed_media_library.entities.Book
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/BookService.java:[25,29] cannot find symbol
+[ERROR]   symbol:   method getImageUrl()
+[ERROR]   location: variable book of type com.example.completed_media_library.entities.Book
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/BookService.java:[26,34] cannot find symbol
+[ERROR]   symbol:   method getCompletedDate()
+[ERROR]   location: variable book of type com.example.completed_media_library.entities.Book
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/BookService.java:[33,13] cannot find symbol
+[ERROR]   symbol:   method setId(java.lang.Long)
+[ERROR]   location: variable book of type com.example.completed_media_library.entities.Book
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/BookService.java:[34,13] cannot find symbol
+[ERROR]   symbol:   method setTitle(java.lang.String)
+[ERROR]   location: variable book of type com.example.completed_media_library.entities.Book
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/BookService.java:[35,13] cannot find symbol
+[ERROR]   symbol:   method setImageUrl(java.lang.String)
+[ERROR]   location: variable book of type com.example.completed_media_library.entities.Book
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/BookService.java:[36,13] cannot find symbol
+[ERROR]   symbol:   method setCompletedDate(java.time.LocalDate)
+[ERROR]   location: variable book of type com.example.completed_media_library.entities.Book
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/MovieService.java:[23,24] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable movie of type com.example.completed_media_library.entities.Movie
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/MovieService.java:[24,27] cannot find symbol
+[ERROR]   symbol:   method getTitle()
+[ERROR]   location: variable movie of type com.example.completed_media_library.entities.Movie
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/MovieService.java:[25,30] cannot find symbol
+[ERROR]   symbol:   method getImageUrl()
+[ERROR]   location: variable movie of type com.example.completed_media_library.entities.Movie
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/MovieService.java:[26,35] cannot find symbol
+[ERROR]   symbol:   method getCompletedDate()
+[ERROR]   location: variable movie of type com.example.completed_media_library.entities.Movie
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/MovieService.java:[33,14] cannot find symbol
+[ERROR]   symbol:   method setId(java.lang.Long)
+[ERROR]   location: variable movie of type com.example.completed_media_library.entities.Movie
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/MovieService.java:[34,14] cannot find symbol
+[ERROR]   symbol:   method setTitle(java.lang.String)
+[ERROR]   location: variable movie of type com.example.completed_media_library.entities.Movie
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/MovieService.java:[35,14] cannot find symbol
+[ERROR]   symbol:   method setImageUrl(java.lang.String)
+[ERROR]   location: variable movie of type com.example.completed_media_library.entities.Movie
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/MovieService.java:[36,14] cannot find symbol
+[ERROR]   symbol:   method setCompletedDate(java.time.LocalDate)
+[ERROR]   location: variable movie of type com.example.completed_media_library.entities.Movie
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/TvShowService.java:[23,25] cannot find symbol
+[ERROR]   symbol:   method getId()
+[ERROR]   location: variable tvShow of type com.example.completed_media_library.entities.TvShow
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/TvShowService.java:[24,28] cannot find symbol
+[ERROR]   symbol:   method getTitle()
+[ERROR]   location: variable tvShow of type com.example.completed_media_library.entities.TvShow
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/TvShowService.java:[25,31] cannot find symbol
+[ERROR]   symbol:   method getImageUrl()
+[ERROR]   location: variable tvShow of type com.example.completed_media_library.entities.TvShow
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/TvShowService.java:[26,36] cannot find symbol
+[ERROR]   symbol:   method getCompletedDate()
+[ERROR]   location: variable tvShow of type com.example.completed_media_library.entities.TvShow
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/TvShowService.java:[33,15] cannot find symbol
+[ERROR]   symbol:   method setId(java.lang.Long)
+[ERROR]   location: variable tvShow of type com.example.completed_media_library.entities.TvShow
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/TvShowService.java:[34,15] cannot find symbol
+[ERROR]   symbol:   method setTitle(java.lang.String)
+[ERROR]   location: variable tvShow of type com.example.completed_media_library.entities.TvShow
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/TvShowService.java:[35,15] cannot find symbol
+[ERROR]   symbol:   method setImageUrl(java.lang.String)
+[ERROR]   location: variable tvShow of type com.example.completed_media_library.entities.TvShow
+[ERROR] /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/services/TvShowService.java:[36,15] cannot find symbol
+[ERROR]   symbol:   method setCompletedDate(java.time.LocalDate)
+[ERROR]   location: variable tvShow of type com.example.completed_media_library.entities.TvShow
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException

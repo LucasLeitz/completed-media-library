@@ -64,4 +64,11 @@ public class MovieController {
         }
         return responseMap;
     }
+
+    @GetMapping("/completed/count/{year}")
+    public ResponseEntity<Long> getCompletedMovieCount(@PathVariable int year) {
+        long count = movieService.getCompletedItemsForYear(year).size();
+        return ResponseEntity.ok(count);
+    }
+
 }

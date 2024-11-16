@@ -20,6 +20,9 @@ export class HomeComponent implements OnInit {
 
   currentYear: number = new Date().getFullYear();
   completedVideoGamesCount: number | null = null;
+  completedTvShowsCount: number | null = null;
+  completedMoviesCount: number | null = null;
+  completedBooksCount: number | null = null;
 
   constructor(
     private bookService: BookService,
@@ -64,6 +67,9 @@ export class HomeComponent implements OnInit {
 
     // Fetch completed video games count
     this.loadCompletedVideoGamesCount();
+    this.loadCompletedBooksCount();
+    this.loadCompletedMoviesCount();
+    this.loadCompletedTvShowsCount();
   }
 
   loadCompletedVideoGamesCount(): void {
@@ -73,6 +79,36 @@ export class HomeComponent implements OnInit {
         console.log('Completed Video Games:', this.completedVideoGamesCount); // Debug log
       },
       error: (err) => console.error('Error fetching completed video games count:', err),
+    });
+  }
+
+  loadCompletedTvShowsCount(): void {
+    this.tvShowService.getCompletedCountForYear(this.currentYear).subscribe({
+      next: (count) => {
+        this.completedTvShowsCount = count;
+        console.log('Completed Tv Shows:', this.completedTvShowsCount); // Debug log
+      },
+      error: (err) => console.error('Error fetching completed tv shows count:', err),
+    });
+  }
+
+  loadCompletedMoviesCount(): void {
+    this.movieService.getCompletedCountForYear(this.currentYear).subscribe({
+      next: (count) => {
+        this.completedMoviesCount = count;
+        console.log('Completed Movies:', this.completedMoviesCount); // Debug log
+      },
+      error: (err) => console.error('Error fetching completed movies count:', err),
+    });
+  }
+
+  loadCompletedBooksCount(): void {
+    this.bookService.getCompletedCountForYear(this.currentYear).subscribe({
+      next: (count) => {
+        this.completedBooksCount = count;
+        console.log('Completed Books:', this.completedBooksCount); // Debug log
+      },
+      error: (err) => console.error('Error fetching completed books count:', err),
     });
   }
 }
