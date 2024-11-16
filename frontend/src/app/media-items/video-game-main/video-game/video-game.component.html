@@ -46,13 +46,14 @@
           <div class="game-info">
             <p class="game-title">{{ game.title }}</p>
             <p class="game-platform">{{ game.platform }}</p>
+            <p class="completed-date">
+              {{ game.completedDate ? (game.completedDate | date: 'yyyy-MM-dd') : 'Not Completed' }}
+            </p>
           </div>
         </div>
 
         <!-- Back of the card -->
         <div class="card-back">
-          <p>Completed Date</p>
-          <p class="completed-date">{{ game.completedDate ? (game.completedDate | date: 'yyyy-MM-dd') : 'Not Completed' }}</p>
         </div>
       </div>
     </div>

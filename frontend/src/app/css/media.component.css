@@ -14,7 +14,7 @@
 .game-info {
   padding: 8px;
   text-align: center;
-  background-color: #000;
+  background-color: #000; /* Ensure fully black background */
   height: 50px; /* Fixed height for the text section */
   display: flex;
   flex-direction: column;
@@ -25,6 +25,7 @@
   font-size: 1rem;
   font-weight: bold;
   margin: 0;
+  color: #fff; /* Ensure text stands out against black */
 }
 
 .game-platform {
@@ -101,7 +102,7 @@ h2 {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
-  background: #000;
+  background: #000; /* Ensure fully black background */
   display: flex;
   flex-direction: column;
 }
@@ -136,8 +137,8 @@ h2 {
 }
 
 .card-front {
-  background: #000; /* Front side background */
-  color: #fff;
+  background: #000; /* Fully black background */
+  color: #fff; /* White text for contrast */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -146,7 +147,7 @@ h2 {
 }
 
 .card-back {
-  background: #222; /* Back side background */
+  background: #000; /* Ensure fully black background */
   color: #fff;
   display: flex;
   flex-direction: column;
@@ -161,9 +162,10 @@ h2 {
 }
 
 .completed-date {
-  font-size: 1.2rem;
+  font-size: 0.85rem;
   font-weight: bold;
-  margin-top: 4px; /* Space between label and date */
+  margin: 2px 0;
+  color: #aaa;
 }
 
 .search-container {
