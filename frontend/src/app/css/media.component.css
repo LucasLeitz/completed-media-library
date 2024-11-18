@@ -217,6 +217,33 @@ h2 {
   transform: scale(1.05);
 }
 
+.button-group {
+  display: flex;
+  flex-direction: column; /* Stack buttons vertically */
+  gap: 10px; /* Spacing between buttons */
+  width: 100%;
+  align-items: center; /* Center buttons horizontally */
+}
+
+.info-btn, .edit-btn, .delete-btn {
+  background: #111; /* Same as Sort button background */
+  border: 1px solid #00ffcc; /* Neon border */
+  color: #00ffcc; /* Neon text */
+  padding: 10px 20px; /* Same padding as Sort button */
+  font-size: 1rem; /* Consistent font size */
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 255, 204, 0.5); /* Same shadow effect */
+  transition: box-shadow 0.3s, transform 0.2s;
+}
+
+.info-btn:hover, .edit-btn:hover, .delete-btn:hover {
+  box-shadow: 0 0 20px rgba(0, 255, 204, 0.8);
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+
 
 
 

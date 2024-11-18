@@ -98,7 +98,24 @@ export class TvShowComponent {
     }
   }
 
-  goToAddTvShow(): void {
+  addTvShow(): void {
     this.router.navigate(['/add-tv-show']);
   }
+
+  // Navigate to the "Edit Tv Show" page
+  editTvShow(index: number): void {
+    if (index < 0 || index >= this.filteredTvShows.length) {
+      console.error(`Index out of range: ${index}`);
+      return;
+    }
+
+    const tvShowToEdit = this.filteredTvShows[index];
+    if (!tvShowToEdit?.id) {
+      console.error(`Invalid tv show or missing ID for tv show at index ${index}:`, tvShowToEdit);
+      return;
+    }
+
+    this.router.navigate(['/edit-tv-show', tvShowToEdit.id]);
+  }
+
 }

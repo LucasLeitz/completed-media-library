@@ -33,4 +33,12 @@ export class VideoGameService {
     return this.http.get<number>(`${this.baseUrl}/completed/count/${year}`);
   }
 
+  getVideoGameById(id: string): Observable<VideoGame> {
+    return this.http.get<VideoGame>(`${this.baseUrl}/${id}`);
+  }
+
+  updateVideoGame(id: number, videoGame: VideoGame): Observable<VideoGame> {
+    return this.http.put<VideoGame>(`${this.baseUrl}/${id}`, videoGame);
+  }
+
 }

@@ -25,7 +25,8 @@ export class VideoGameComponent {
   constructor(
     private videoGameService: VideoGameService,
     private router: Router
-  ) {}
+  ) {
+  }
 
   ngOnInit(): void {
     this.videoGameService.getAllVideoGames().subscribe((data) => {
@@ -90,7 +91,7 @@ export class VideoGameComponent {
   }
 
   // Method to remove a game
-  removeGame(index: number): void {
+  removeVideoGame(index: number): void {
     const gameToRemove = this.filteredGames[index];
     if (!gameToRemove || !gameToRemove.id) {
       console.error("Invalid game or missing ID:", gameToRemove);
@@ -115,7 +116,24 @@ export class VideoGameComponent {
   }
 
   // Navigate to the "Add Video Game" page
-  goToAddVideoGame(): void {
+  addVideoGame(): void {
     this.router.navigate(['/add-video-game']);
   }
+
+  // Navigate to the "Edit Video Game" page
+  editVideoGame(index: number): void {
+    if (index < 0 || index >= this.filteredGames.length) {
+      console.error(`Index out of range: ${index}`);
+      return;
+    }
+
+    const gameToEdit = this.filteredGames[index];
+    if (!gameToEdit?.id) {
+      console.error(`Invalid game or missing ID for game at index ${index}:`, gameToEdit);
+      return;
+    }
+
+    this.router.navigate(['/edit-video-game', gameToEdit.id]);
+  }
+
 }

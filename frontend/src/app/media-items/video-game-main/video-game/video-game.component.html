@@ -2,7 +2,7 @@
   <h2 class="cool-title">Completed Video Game List</h2>
 
   <div class="button-container">
-    <button class="add-game-btn" (click)="goToAddVideoGame()">Add Game</button>
+    <button class="add-game-btn" (click)="addVideoGame()">Add Game</button>
     <button class="search-game-btn" (click)="toggleSearch()" >Search for Game</button>
     <button class="sort-games-btn" (click)="toggleSortOptions()">Sort Games</button>
   </div>
@@ -37,8 +37,6 @@
       (click)="flipCard(i)"
       [class.flipped]="flippedCards[i]"
     >
-      <button class="remove-btn" (click)="removeGame(i); $event.stopPropagation()">x</button>
-
       <div class="card-inner">
         <!-- Front of the card -->
         <div class="card-front">
@@ -46,14 +44,16 @@
           <div class="game-info">
             <p class="game-title">{{ game.title }}</p>
             <p class="game-platform">{{ game.platform }}</p>
-            <p class="completed-date">
-              {{ game.completedDate ? (game.completedDate | date: 'yyyy-MM-dd') : 'Not Completed' }}
-            </p>
           </div>
         </div>
 
         <!-- Back of the card -->
         <div class="card-back">
+          <div class="button-group">
+            <button class="info-btn" (click)="$event.stopPropagation()">More Info</button>
+            <button class="edit-btn" (click)="editVideoGame(i); $event.stopPropagation()">Edit</button>
+            <button class="delete-btn" (click)="removeVideoGame(i); $event.stopPropagation()">Delete</button>
+          </div>
         </div>
       </div>
     </div>

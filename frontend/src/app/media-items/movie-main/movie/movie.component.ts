@@ -98,7 +98,24 @@ export class MovieComponent {
     }
   }
 
-  goToAddMovie(): void {
+  addMovie(): void {
     this.router.navigate(['/add-movie']);
   }
+
+  // Navigate to the "Edit Movie" page
+  editMovie(index: number): void {
+    if (index < 0 || index >= this.filteredMovies.length) {
+      console.error(`Index out of range: ${index}`);
+      return;
+    }
+
+    const movieToEdit = this.filteredMovies[index];
+    if (!movieToEdit?.id) {
+      console.error(`Invalid movie or missing ID for movie at index ${index}:`, movieToEdit);
+      return;
+    }
+
+    this.router.navigate(['/edit-movie', movieToEdit.id]);
+  }
+
 }

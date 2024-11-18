@@ -2,7 +2,7 @@
   <h2 class="cool-title">Completed TV Show List</h2>
 
   <div class="button-container">
-    <button class="add-game-btn" (click)="goToAddTvShow()">Add TV Show</button>
+    <button class="add-game-btn" (click)="addTvShow()">Add TV Show</button>
     <button class="search-game-btn" (click)="toggleSearch()">Search for TV Show</button>
     <button class="sort-games-btn" (click)="toggleSortOptions()">Sort TV Shows</button>
   </div>
@@ -35,7 +35,6 @@
       (click)="flipCard(i)"
       [class.flipped]="flippedCards[i]"
     >
-      <button class="remove-btn" (click)="removeTvShow(i); $event.stopPropagation()">x</button>
 
       <div class="card-inner">
         <!-- Front of the card -->
@@ -43,12 +42,16 @@
           <img *ngIf="tvShow.imageUrl" [src]="tvShow.imageUrl" alt="{{ tvShow.title }} image" class="game-image" />
           <div class="game-info">
             <p class="game-title">{{ tvShow.title }}</p>
-            <p class="completed-date">{{ tvShow.completedDate ? (tvShow.completedDate | date: 'yyyy-MM-dd') : 'Not Completed' }}</p>
           </div>
         </div>
 
         <!-- Back of the card -->
         <div class="card-back">
+          <div class="button-group">
+            <button class="info-btn" (click)="$event.stopPropagation()">More Info</button>
+            <button class="edit-btn" (click)="editTvShow(i); $event.stopPropagation()">Edit</button>
+            <button class="delete-btn" (click)="removeTvShow(i); $event.stopPropagation()">Delete</button>
+          </div>
         </div>
       </div>
     </div>

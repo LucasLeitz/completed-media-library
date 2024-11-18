@@ -52,4 +52,21 @@ public abstract class BaseService<T, D> {
                     }
                 }).toList();
     }
+
+    public D findById(Long id) {
+        return getRepository().findById(id)
+                .map(this::mapToDTO)
+                .orElseThrow(() -> new ResourceNotFoundException("Entity with ID " + id + " not found."));
+    }
+
+    public D update(Long id, D dto) {
+        if (!getRepository().existsById(id)) {
+            throw new ResourceNotFoundException("Entity with ID " + id + " not found.");
+        }
+
+        T entity = mapToEntity(dto);
+        entity = getRepository().save(entity); // Save the updated entity
+        return mapToDTO(entity); // Convert and return the updated DTO
+    }
+
 }

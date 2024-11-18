@@ -2,7 +2,7 @@
   <h2 class="cool-title">Completed Movie List</h2>
 
   <div class="button-container">
-    <button class="add-game-btn" (click)="goToAddMovie()">Add Movie</button>
+    <button class="add-game-btn" (click)="addMovie()">Add Movie</button>
     <button class="search-game-btn" (click)="toggleSearch()">Search for Movie</button>
     <button class="sort-games-btn" (click)="toggleSortOptions()">Sort Movies</button>
   </div>
@@ -35,7 +35,6 @@
       (click)="flipCard(i)"
       [class.flipped]="flippedCards[i]"
     >
-      <button class="remove-btn" (click)="removeMovie(i); $event.stopPropagation()">x</button>
 
       <div class="card-inner">
         <!-- Front of the card -->
@@ -43,12 +42,16 @@
           <img *ngIf="movie.imageUrl" [src]="movie.imageUrl" alt="{{ movie.title }} image" class="game-image" />
           <div class="game-info">
             <p class="game-title">{{ movie.title }}</p>
-            <p class="completed-date">{{ movie.completedDate ? (movie.completedDate | date: 'yyyy-MM-dd') : 'Not Completed' }}</p>
           </div>
         </div>
 
         <!-- Back of the card -->
         <div class="card-back">
+          <div class="button-group">
+            <button class="info-btn" (click)="$event.stopPropagation()">More Info</button>
+            <button class="edit-btn" (click)="editMovie(i); $event.stopPropagation()">Edit</button>
+            <button class="delete-btn" (click)="removeMovie(i); $event.stopPropagation()">Delete</button>
+          </div>
         </div>
       </div>
     </div>

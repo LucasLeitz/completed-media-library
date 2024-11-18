@@ -98,7 +98,24 @@ export class BookComponent {
     }
   }
 
-  goToAddBook(): void {
+  addBook(): void {
     this.router.navigate(['/add-book']);
   }
+
+  // Navigate to the "Edit Book" page
+  editBook(index: number): void {
+    if (index < 0 || index >= this.filteredBooks.length) {
+      console.error(`Index out of range: ${index}`);
+      return;
+    }
+
+    const bookToEdit = this.filteredBooks[index];
+    if (!bookToEdit?.id) {
+      console.error(`Invalid book or missing ID for book at index ${index}:`, bookToEdit);
+      return;
+    }
+
+    this.router.navigate(['/edit-book', bookToEdit.id]);
+  }
+
 }

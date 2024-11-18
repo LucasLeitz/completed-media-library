@@ -71,4 +71,21 @@ public class VideoGameController {
         return ResponseEntity.ok(count);
     }
 
+    @GetMapping("/{id}")
+    public ResponseEntity<VideoGameDTO> getVideoGameById(@PathVariable Long id) {
+        VideoGameDTO videoGameDTO = videoGameService.findById(id);
+        if (videoGameDTO == null) {
+            return ResponseEntity.notFound().build(); // Return 404 if not found
+        }
+        return ResponseEntity.ok(videoGameDTO); // Return 200 with the DTO
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<VideoGameDTO> updateVideoGame(
+            @PathVariable Long id,
+            @RequestBody VideoGameDTO videoGameDTO) {
+        VideoGameDTO updatedGame = videoGameService.update(id, videoGameDTO);
+        return ResponseEntity.ok(updatedGame);
+    }
+
 }
