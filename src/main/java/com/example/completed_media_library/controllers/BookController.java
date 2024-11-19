@@ -70,4 +70,21 @@ public class BookController {
         long count = bookService.getCompletedItemsForYear(year).size();
         return ResponseEntity.ok(count);
     }
+
+    @GetMapping("/{id}")
+    public ResponseEntity<BookDTO> getBookById(@PathVariable Long id) {
+        BookDTO bookDTO = bookService.findById(id);
+        if (bookDTO == null) {
+            return ResponseEntity.notFound().build(); // Return 404 if not found
+        }
+        return ResponseEntity.ok(bookDTO); // Return 200 with the DTO
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<BookDTO> updateBook(
+            @PathVariable Long id,
+            @RequestBody BookDTO bookDTO) {
+        BookDTO updatedBook = bookService.update(id, bookDTO);
+        return ResponseEntity.ok(updatedBook);
+    }
 }

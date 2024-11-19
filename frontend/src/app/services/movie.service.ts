@@ -33,4 +33,12 @@ export class MovieService {
     return this.http.get<number>(`${this.baseUrl}/completed/count/${year}`);
   }
 
+  getMovieById(id: string): Observable<Movie> {
+    return this.http.get<Movie>(`${this.baseUrl}/${id}`);
+  }
+
+  updateMovie(id: number, movie: Movie): Observable<Movie> {
+    return this.http.put<Movie>(`${this.baseUrl}/${id}`, movie);
+  }
+
 }

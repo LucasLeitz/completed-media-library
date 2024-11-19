@@ -32,4 +32,12 @@ export class TvShowService {
   getCompletedCountForYear(year: number): Observable<number> {
     return this.http.get<number>(`${this.baseUrl}/completed/count/${year}`);
   }
+
+  getTvShowById(id: string): Observable<TvShow> {
+    return this.http.get<TvShow>(`${this.baseUrl}/${id}`);
+  }
+
+  updateTvShow(id: number, tvShow: TvShow): Observable<TvShow> {
+    return this.http.put<TvShow>(`${this.baseUrl}/${id}`, tvShow);
+  }
 }

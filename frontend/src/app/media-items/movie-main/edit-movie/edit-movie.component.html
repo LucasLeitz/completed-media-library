@@ -1,1 +1,73 @@
-<p>edit-movie works!</p>
+<div class="content-container">
+  <h2 class="cool-title">Edit Movie</h2>
+
+  <form class="edit-media-form">
+    <div class="form-group">
+      <label for="title">Title:</label>
+      <input
+        type="text"
+        id="title"
+        name="title"
+        [(ngModel)]="movie.title"
+        required
+        class="form-input"
+        placeholder="Enter movie title"
+      />
+    </div>
+
+    <div class="form-group">
+      <label for="completedDate">Completed Date:</label>
+      <input
+        type="date"
+        id="completedDate"
+        name="completedDate"
+        [(ngModel)]="movie.completedDate"
+        required
+        class="form-input"
+      />
+    </div>
+
+    <!-- Input for New Image URL -->
+    <div class="form-group">
+      <label for="newImageUrl">New Image URL:</label>
+      <input
+        type="text"
+        id="newImageUrl"
+        name="newImageUrl"
+        [(ngModel)]="newImageUrl"
+        (input)="updatePreview()"
+        class="form-input"
+        placeholder="Enter new image URL"
+      />
+    </div>
+
+    <!-- Preview of New Image -->
+    <div *ngIf="newImageUrl" class="image-preview">
+      <p>New Image Preview:</p>
+      <img
+        [src]="newImageUrl"
+        alt="New Movie Image Preview"
+        class="preview-img"
+      />
+    </div>
+
+    <!-- Existing Image Preview -->
+    <div *ngIf="movie.imageUrl" class="image-preview">
+      <p>Current Image Preview:</p>
+      <img
+        [src]="movie.imageUrl"
+        alt="Current Movie Image Preview"
+        class="preview-img"
+      />
+    </div>
+
+    <div class="button-container">
+      <button (click)="onSave()" type="button" class="save-btn">
+        Save
+      </button>
+      <button (click)="onCancel()" type="button" class="cancel-btn">
+        Cancel
+      </button>
+    </div>
+  </form>
+</div>

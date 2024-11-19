@@ -20,7 +20,7 @@
 }
 
 /* Form styling */
-.edit-game-form {
+.edit-media-form {
   display: flex;
   flex-direction: column;
   gap: 16px; /* Space between form groups */

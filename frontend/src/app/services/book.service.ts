@@ -33,4 +33,12 @@ export class BookService {
     return this.http.get<number>(`${this.baseUrl}/completed/count/${year}`);
   }
 
+  getBookById(id: string): Observable<Book> {
+    return this.http.get<Book>(`${this.baseUrl}/${id}`);
+  }
+
+  updateBook(id: number, book: Book): Observable<Book> {
+    return this.http.put<Book>(`${this.baseUrl}/${id}`, book);
+  }
+
 }

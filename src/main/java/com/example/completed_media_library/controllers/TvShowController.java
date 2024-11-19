@@ -71,4 +71,21 @@ public class TvShowController {
         return ResponseEntity.ok(count);
     }
 
+    @GetMapping("/{id}")
+    public ResponseEntity<TvShowDTO> getTvShowById(@PathVariable Long id) {
+        TvShowDTO tvShowDTO = tvShowService.findById(id);
+        if (tvShowDTO == null) {
+            return ResponseEntity.notFound().build(); // Return 404 if not found
+        }
+        return ResponseEntity.ok(tvShowDTO); // Return 200 with the DTO
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<TvShowDTO> updateTvShow(
+            @PathVariable Long id,
+            @RequestBody TvShowDTO tvShowDTO) {
+        TvShowDTO updatedTvShow = tvShowService.update(id, tvShowDTO);
+        return ResponseEntity.ok(updatedTvShow);
+    }
+
 }

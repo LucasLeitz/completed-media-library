@@ -71,4 +71,21 @@ public class MovieController {
         return ResponseEntity.ok(count);
     }
 
+    @GetMapping("/{id}")
+    public ResponseEntity<MovieDTO> getMovieById(@PathVariable Long id) {
+        MovieDTO movieDTO = movieService.findById(id);
+        if (movieDTO == null) {
+            return ResponseEntity.notFound().build(); // Return 404 if not found
+        }
+        return ResponseEntity.ok(movieDTO); // Return 200 with the DTO
+    }
+
+    @PutMapping("/{id}")
+    public ResponseEntity<MovieDTO> updateMovie(
+            @PathVariable Long id,
+            @RequestBody MovieDTO movieDTO) {
+        MovieDTO updatedMovie = movieService.update(id, movieDTO);
+        return ResponseEntity.ok(updatedMovie);
+    }
+
 }
