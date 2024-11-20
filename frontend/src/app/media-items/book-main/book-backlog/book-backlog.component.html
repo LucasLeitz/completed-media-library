@@ -1,0 +1,62 @@
+<div class="content-container">
+  <h2 class="cool-title">Backlog Book List</h2>
+
+  <div class="button-container">
+    <button class="add-item-btn" (click)="addBacklogItem()">Add Backlog Book</button>
+    <button class="search-item-btn">Search for Backlog Books</button>
+    <button class="sort-items-btn">Sort Backlog Books</button>
+    <button class="filter-items-btn">Filter Backlog Books</button>
+    <button class="backlog-btn" (click)="goToCompletedBooks()">View Completed Books</button>
+  </div>
+
+  <!-- Sort Options Dropdown -->
+  <!--  <div *ngIf="showSortOptions" class="sort-container">-->
+  <!--    <label for="sortCriteria" class="sort-label">Sort by:</label>-->
+  <!--    <select id="sortCriteria" [(ngModel)]="sortCriteria" (change)="sortGames()" class="sort-select">-->
+  <!--      <option value="title">Title</option>-->
+  <!--      <option value="completedDate">Completed Date</option>-->
+  <!--      <option value="platform">Platform</option>-->
+  <!--    </select>-->
+  <!--  </div>-->
+
+  <!--  &lt;!&ndash; Search Input: Only visible when "Search for Game" is clicked &ndash;&gt;-->
+  <!--  <div *ngIf="showSearch" class="search-container">-->
+  <!--    <input-->
+  <!--      type="text"-->
+  <!--      placeholder="Search for a game..."-->
+  <!--      [(ngModel)]="searchTerm"-->
+  <!--      (input)="filterGames()"-->
+  <!--      class="search-input"-->
+  <!--    />-->
+  <!--  </div>-->
+
+
+  <!-- Book Backlog List -->
+  <div class="item-grid">
+    <div
+      class="item-card"
+      *ngFor="let book of filteredBacklogs; let i = index"
+      (click)="flipCard(i)"
+      [class.flipped]="flippedCards[i]"
+    >
+      <div class="card-inner">
+        <!-- Front of the card -->
+        <div class="card-front">
+          <img *ngIf="book.imageUrl" [src]="book.imageUrl" alt="{{ book.title }} image" class="item-image" />
+          <div class="item-info">
+            <p class="item-title">{{ book.title }}</p>
+          </div>
+        </div>
+
+        <!-- Back of the card -->
+        <div class="card-back">
+          <div class="button-group">
+            <button class="info-btn" (click)="$event.stopPropagation()">More Info</button>
+            <button class="edit-btn" (click)="$event.stopPropagation()">Edit</button>
+            <button class="delete-btn" (click)="removeBacklogItem(i); $event.stopPropagation()">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -85,6 +85,7 @@ export class MovieComponent {
     }
 
     if (confirm('Are you sure you want to remove this movie?')) {
+      this.flipCard(index);
       this.movieService.deleteMovie(movieToRemove.id).subscribe({
         next: () => {
           this.movies = this.movies.filter(movie => movie.id !== movieToRemove.id);
@@ -116,6 +117,10 @@ export class MovieComponent {
     }
 
     this.router.navigate(['/edit-movie', movieToEdit.id]);
+  }
+
+  goToBacklog(): void {
+    this.router.navigate(['/movies/backlog']);
   }
 
 }

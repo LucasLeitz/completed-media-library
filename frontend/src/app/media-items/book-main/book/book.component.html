@@ -2,9 +2,11 @@
   <h2 class="cool-title">Completed Book List</h2>
 
   <div class="button-container">
-    <button class="add-game-btn" (click)="addBook()">Add Book</button>
-    <button class="search-game-btn" (click)="toggleSearch()">Search for Book</button>
-    <button class="sort-games-btn" (click)="toggleSortOptions()">Sort Books</button>
+    <button class="add-item-btn" (click)="addBook()">Add Book</button>
+    <button class="search-item-btn" (click)="toggleSearch()">Search for Book</button>
+    <button class="sort-items-btn" (click)="toggleSortOptions()">Sort Books</button>
+    <button class="filter-items-btn">Filter Books</button>
+    <button class="backlog-btn" (click)="goToBacklog()">View Backlog</button>
   </div>
 
   <!-- Sort Options Dropdown -->
@@ -28,9 +30,9 @@
   </div>
 
   <!-- Book List -->
-  <div class="game-grid">
+  <div class="item-grid">
     <div
-      class="game-card"
+      class="item-card"
       *ngFor="let book of filteredBooks; let i = index"
       (click)="flipCard(i)"
       [class.flipped]="flippedCards[i]"
@@ -39,9 +41,9 @@
       <div class="card-inner">
         <!-- Front of the card -->
         <div class="card-front">
-          <img *ngIf="book.imageUrl" [src]="book.imageUrl" alt="{{ book.title }} image" class="game-image" />
-          <div class="game-info">
-            <p class="game-title">{{ book.title }}</p>
+          <img *ngIf="book.imageUrl" [src]="book.imageUrl" alt="{{ book.title }} image" class="item-image" />
+          <div class="item-info">
+            <p class="item-title">{{ book.title }}</p>
           </div>
         </div>
 

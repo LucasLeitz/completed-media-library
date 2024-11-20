@@ -2,9 +2,11 @@
   <h2 class="cool-title">Completed TV Show List</h2>
 
   <div class="button-container">
-    <button class="add-game-btn" (click)="addTvShow()">Add TV Show</button>
-    <button class="search-game-btn" (click)="toggleSearch()">Search for TV Show</button>
-    <button class="sort-games-btn" (click)="toggleSortOptions()">Sort TV Shows</button>
+    <button class="add-item-btn" (click)="addTvShow()">Add TV Show</button>
+    <button class="search-item-btn" (click)="toggleSearch()">Search for TV Show</button>
+    <button class="sort-items-btn" (click)="toggleSortOptions()">Sort TV Shows</button>
+    <button class="filter-items-btn">Filter Tv Shows</button>
+    <button class="backlog-btn" (click)="goToBacklog()">View Backlog</button>
   </div>
 
   <!-- Sort Options Dropdown -->
@@ -28,9 +30,9 @@
   </div>
 
   <!-- TV Show List -->
-  <div class="game-grid">
+  <div class="item-grid">
     <div
-      class="game-card"
+      class="item-card"
       *ngFor="let tvShow of filteredTvShows; let i = index"
       (click)="flipCard(i)"
       [class.flipped]="flippedCards[i]"
@@ -39,9 +41,9 @@
       <div class="card-inner">
         <!-- Front of the card -->
         <div class="card-front">
-          <img *ngIf="tvShow.imageUrl" [src]="tvShow.imageUrl" alt="{{ tvShow.title }} image" class="game-image" />
-          <div class="game-info">
-            <p class="game-title">{{ tvShow.title }}</p>
+          <img *ngIf="tvShow.imageUrl" [src]="tvShow.imageUrl" alt="{{ tvShow.title }} image" class="item-image" />
+          <div class="item-info">
+            <p class="item-title">{{ tvShow.title }}</p>
           </div>
         </div>
 

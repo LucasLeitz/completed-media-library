@@ -101,6 +101,7 @@ export class VideoGameComponent {
     console.log("Deleting game with ID:", gameToRemove.id); // Debug the ID
 
     if (confirm('Are you sure you want to remove this game?')) {
+      this.flipCard(index);
       this.videoGameService.deleteVideoGame(gameToRemove.id).subscribe({
         next: () => {
           this.videoGames = this.videoGames.filter(game => game.id !== gameToRemove.id);
@@ -134,6 +135,10 @@ export class VideoGameComponent {
     }
 
     this.router.navigate(['/edit-video-game', gameToEdit.id]);
+  }
+
+  goToBacklog(): void {
+    this.router.navigate(['/video-games/backlog']);
   }
 
 }

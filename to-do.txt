@@ -1,0 +1,12 @@
+To-Do
+1. Make the mac mini a server to be able to connect to from other devices
+2. Add a "filter" feature for the items that includes platform, a range of dates, etc.
+3. Add a way for the user to input their own image if they don't like the one generated from Wikipedia
+4. Add backlog items on home page
+5. Add backlog
+
+Bugs
+
+
+Completed
+1. When a game is deleted, the next card that takes its spot is flipped over

@@ -1,17 +1,17 @@
-.game-grid {
+.item-grid {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
 }
 
-.game-image {
+.item-image {
   width: 100%;
   flex-grow: 1; /* Allow the image to take up remaining space */
   object-fit: cover;
   border-radius: 8px 8px 0 0; /* Rounded corners for the top only */
 }
 
-.game-info {
+.item-info {
   padding: 8px;
   text-align: center;
   background-color: #000; /* Ensure fully black background */
@@ -21,14 +21,14 @@
   justify-content: center;
 }
 
-.game-title {
+.item-title {
   font-size: 1rem;
   font-weight: bold;
   margin: 0;
   color: #fff; /* Ensure text stands out against black */
 }
 
-.game-platform {
+.item-platform {
   font-size: 0.85rem;
   font-weight: bold;
   margin: 2px 0;
@@ -58,6 +58,7 @@
 
 .button-container {
   display: flex;
+  justify-content: center;
   gap: 10px; /* Adjust the spacing as needed */
 }
 
@@ -65,7 +66,7 @@ h2 {
   margin-top: 0;
 }
 
-.add-game-btn, .search-game-btn, .sort-games-btn {
+.add-item-btn, .search-item-btn, .sort-items-btn, .backlog-btn, .filter-items-btn {
   background: #111;
   border: 1px solid #00ffcc;
   color: #00ffcc;
@@ -79,7 +80,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-.add-game-btn:hover, .search-game-btn:hover, .sort-games-btn:hover {
+.add-item-btn:hover, .search-item-btn:hover, .sort-items-btn:hover {
   box-shadow: 0 0 20px rgba(0, 255, 204, 0.8);
   transform: scale(1.05);
 }
@@ -94,8 +95,8 @@ h2 {
   margin-bottom: 20px; /* Space below title if needed */
 }
 
-/* Video Game Cards */
-.game-card {
+/* Item Cards */
+.item-card {
   position: relative;
   width: 200px;
   height: 300px; /* Fixed overall height for the card */
@@ -107,7 +108,7 @@ h2 {
   flex-direction: column;
 }
 
-.game-image {
+.item-image {
   width: 100%;
   height: 70%; /* Adjust height for the image section */
   object-fit: cover;
@@ -122,7 +123,7 @@ h2 {
   position: relative;
 }
 
-.game-card.flipped .card-inner {
+.item-card.flipped .card-inner {
   transform: rotateY(180deg);
 }
 

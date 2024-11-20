@@ -85,6 +85,7 @@ export class TvShowComponent {
     }
 
     if (confirm('Are you sure you want to remove this TV show?')) {
+      this.flipCard(index);
       this.tvShowService.deleteTvShow(tvShowToRemove.id).subscribe({
         next: () => {
           this.tvShows = this.tvShows.filter(tvShow => tvShow.id !== tvShowToRemove.id);
@@ -116,6 +117,10 @@ export class TvShowComponent {
     }
 
     this.router.navigate(['/edit-tv-show', tvShowToEdit.id]);
+  }
+
+  goToBacklog(): void {
+    this.router.navigate(['/tv-shows/backlog']);
   }
 
 }

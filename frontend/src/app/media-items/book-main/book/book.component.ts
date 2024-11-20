@@ -85,6 +85,7 @@ export class BookComponent {
     }
 
     if (confirm('Are you sure you want to remove this book?')) {
+      this.flipCard(index);
       this.bookService.deleteBook(bookToRemove.id).subscribe({
         next: () => {
           this.books = this.books.filter(book => book.id !== bookToRemove.id);
@@ -116,6 +117,10 @@ export class BookComponent {
     }
 
     this.router.navigate(['/edit-book', bookToEdit.id]);
+  }
+
+  goToBacklog(): void {
+    this.router.navigate(['/books/backlog']);
   }
 
 }
