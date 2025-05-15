@@ -4,9 +4,8 @@ To-Do
 3. Add a way for the user to input their own image if they don't like the one generated from Wikipedia
 4. Add backlog items on home page
 5. Add backlog
+6. Change all the items to one "Media" object with a type enum. Makes code way more DRY
 
 Bugs
 
 
-Completed
-1. When a game is deleted, the next card that takes its spot is flipped over

@@ -1,52 +1,42 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 
-import { VideoGameComponent } from './media-items/video-game-main/video-game/video-game.component';
-import { BookComponent } from './media-items/book-main/book/book.component';
-import { MovieComponent } from './media-items/movie-main/movie/movie.component';
-import { TvShowComponent } from './media-items/tv-show-main/tv-show/tv-show.component';
-
-import { UploadVideoGameComponent } from './media-items/video-game-main/upload-video-game/upload-video-game.component';
-import { UploadTvShowComponent } from './media-items/tv-show-main/upload-tv-show/upload-tv-show.component';
-import { UploadMovieComponent } from './media-items/movie-main/upload-movie/upload-movie.component';
-import { UploadBookComponent } from './media-items/book-main/upload-book/upload-book.component';
-import { UploadBacklogComponent } from './media-items/backlog-main/upload-backlog/upload-backlog.component';
-
-import { EditBookComponent } from './media-items/book-main/edit-book/edit-book.component';
-import { EditMovieComponent } from './media-items/movie-main/edit-movie/edit-movie.component';
-import { EditTvShowComponent } from './media-items/tv-show-main/edit-tv-show/edit-tv-show.component';
-import { EditVideoGameComponent } from './media-items/video-game-main/edit-video-game/edit-video-game.component';
-
-import { VideoGameBacklogComponent } from './media-items/video-game-main/video-game-backlog/video-game-backlog.component';
-import { BookBacklogComponent } from './media-items/book-main/book-backlog/book-backlog.component';
-import { MovieBacklogComponent } from './media-items/movie-main/movie-backlog/movie-backlog.component';
-import { TvShowBacklogComponent } from './media-items/tv-show-main/tv-show-backlog/tv-show-backlog.component';
+import { MediaComponent } from './media-items/media-main/media/media.component';
+import { UploadMediaComponent } from './media-items/media-main/upload-media/upload-media.component';
+import { EditMediaComponent } from './media-items/media-main/edit-media/edit-media.component';
+import { MediaBacklogComponent } from './media-items/media-main/media-backlog/media-backlog.component';
 
 export const routes: Routes = [
-
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
 
-  { path: 'video-games', component: VideoGameComponent },
-  { path: 'books', component: BookComponent },
-  { path: 'movies', component: MovieComponent },
-  { path: 'tv-shows', component: TvShowComponent },
+  // Media list views
+  { path: 'books', component: MediaComponent, data: { mediaType: 'BOOK' } },
+  { path: 'movies', component: MediaComponent, data: { mediaType: 'MOVIE' } },
+  { path: 'tv-shows', component: MediaComponent, data: { mediaType: 'TV_SHOW' } },
+  { path: 'video-games', component: MediaComponent, data: { mediaType: 'VIDEO_GAME' } },
 
-  { path: 'add-tv-show', component: UploadTvShowComponent },
-  { path: 'add-movie', component: UploadMovieComponent },
-  { path: 'add-video-game', component: UploadVideoGameComponent },
-  { path: 'add-book', component: UploadBookComponent },
-  { path: 'add-backlog', component: UploadBacklogComponent },
+  // Upload routes (completed and backlog)
+  { path: 'add-book', component: UploadMediaComponent, data: { mediaType: 'BOOK', status: 'COMPLETED' } },
+  { path: 'add-book/backlog', component: UploadMediaComponent, data: { mediaType: 'BOOK', status: 'BACKLOG' } },
 
-  { path: 'edit-tv-show/:id', component: EditTvShowComponent },
-  { path: 'edit-movie/:id', component: EditMovieComponent },
-  { path: 'edit-video-game/:id', component: EditVideoGameComponent },
-  { path: 'edit-book/:id', component: EditBookComponent },
+  { path: 'add-movie', component: UploadMediaComponent, data: { mediaType: 'MOVIE', status: 'COMPLETED' } },
+  { path: 'add-movie/backlog', component: UploadMediaComponent, data: { mediaType: 'MOVIE', status: 'BACKLOG' } },
 
-  { path: 'video-games/backlog', component: VideoGameBacklogComponent },
-  { path: 'books/backlog', component: BookBacklogComponent },
-  { path: 'movies/backlog', component: MovieBacklogComponent },
-  { path: 'tv-shows/backlog', component: TvShowBacklogComponent },
+  { path: 'add-tv-show', component: UploadMediaComponent, data: { mediaType: 'TV_SHOW', status: 'COMPLETED' } },
+  { path: 'add-tv-show/backlog', component: UploadMediaComponent, data: { mediaType: 'TV_SHOW', status: 'BACKLOG' } },
 
+  { path: 'add-video-game', component: UploadMediaComponent, data: { mediaType: 'VIDEO_GAME', status: 'COMPLETED' } },
+  { path: 'add-video-game/backlog', component: UploadMediaComponent, data: { mediaType: 'VIDEO_GAME', status: 'BACKLOG' } },
+
+  // Backlog views
+  { path: 'books/backlog', component: MediaBacklogComponent, data: { mediaType: 'BOOK' } },
+  { path: 'movies/backlog', component: MediaBacklogComponent, data: { mediaType: 'MOVIE' } },
+  { path: 'tv-shows/backlog', component: MediaBacklogComponent, data: { mediaType: 'TV_SHOW' } },
+  { path: 'video-games/backlog', component: MediaBacklogComponent, data: { mediaType: 'VIDEO_GAME' } },
+
+  // Edit media
+  { path: 'edit-media/:id', component: EditMediaComponent }
 ];
+
 

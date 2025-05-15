@@ -1,4 +1,12 @@
+com/example/completed_media_library/dtos/MediaDTO.class
+com/example/completed_media_library/controllers/MediaController.class
+com/example/completed_media_library/exceptions/ResourceNotFoundException.class
 com/example/completed_media_library/config/WebConfig$1.class
+com/example/completed_media_library/entities/Media.class
+com/example/completed_media_library/services/BaseService.class
+com/example/completed_media_library/entities/MediaType.class
 com/example/completed_media_library/CompletedMediaLibraryApplication.class
-com/example/completed_media_library/controllers/BookController.class
+com/example/completed_media_library/config/CorsConfig.class
+com/example/completed_media_library/repositories/MediaRepository.class
+com/example/completed_media_library/services/MediaService.class
 com/example/completed_media_library/config/WebConfig.class

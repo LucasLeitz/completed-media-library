@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { BookService } from '../services/book.service';
-import { MovieService } from '../services/movie.service';
-import { TvShowService } from '../services/tv-show.service';
-import { VideoGameService } from '../services/video-game.service';
 import { CommonModule } from '@angular/common';
+import { MediaService } from '../services/media.service';
+import { MediaType } from '../models/media.model';
 
 @Component({
   selector: 'app-home',
@@ -13,96 +11,69 @@ import { CommonModule } from '@angular/common';
   imports: [CommonModule],
 })
 export class HomeComponent implements OnInit {
-  totalBooks: number = 0;
-  totalMovies: number = 0;
-  totalTvShows: number = 0;
-  totalVideoGames: number = 0;
+  totalBooks = 0;
+  totalMovies = 0;
+  totalTvShows = 0;
+  totalVideoGames = 0;
 
-  currentYear: number = new Date().getFullYear();
-  completedVideoGamesCount: number | null = null;
-  completedTvShowsCount: number | null = null;
-  completedMoviesCount: number | null = null;
   completedBooksCount: number | null = null;
+  completedMoviesCount: number | null = null;
+  completedTvShowsCount: number | null = null;
+  completedVideoGamesCount: number | null = null;
 
-  constructor(
-    private bookService: BookService,
-    private movieService: MovieService,
-    private tvShowService: TvShowService,
-    private videoGameService: VideoGameService
-  ) {}
+  currentYear = new Date().getFullYear();
+
+  constructor(private mediaService: MediaService) {}
 
   ngOnInit(): void {
-    // Fetch total counts
-    this.bookService.getAllBooks().subscribe({
-      next: (books) => {
-        this.totalBooks = books.length;
-      },
+    this.loadTotalCounts();
+    this.loadCompletedCounts();
+  }
+
+  loadTotalCounts(): void {
+    this.mediaService.getByType(MediaType.BOOK).subscribe({
+      next: (books) => this.totalBooks = books.filter(b => b.status === 'COMPLETED').length,
       error: (err) => console.error('Error fetching books:', err),
     });
 
-    this.movieService.getAllMovies().subscribe({
-      next: (movies) => {
-        this.totalMovies = movies.length;
-      },
+    this.mediaService.getByType(MediaType.MOVIE).subscribe({
+      next: (movies) => this.totalMovies = movies.filter(m => m.status === 'COMPLETED').length,
       error: (err) => console.error('Error fetching movies:', err),
     });
 
-    this.tvShowService.getAllTvShows().subscribe({
-      next: (tvShows) => {
-        this.totalTvShows = tvShows.length;
-      },
-      error: (err) => console.error('Error fetching TV shows:', err),
+    this.mediaService.getByType(MediaType.TV_SHOW).subscribe({
+      next: (shows) => this.totalTvShows = shows.filter(s => s.status === 'COMPLETED').length,
+      error: (err) => console.error('Error fetching tv shows:', err),
     });
 
-    this.videoGameService.getAllVideoGames().subscribe({
-      next: (videoGames) => {
-        this.totalVideoGames = videoGames.length;
-      },
+    this.mediaService.getByType(MediaType.VIDEO_GAME).subscribe({
+      next: (games) => this.totalVideoGames = games.filter(g => g.status === 'COMPLETED').length,
       error: (err) => console.error('Error fetching video games:', err),
     });
-
-    // Fetch completed video games count
-    this.loadCompletedVideoGamesCount();
-    this.loadCompletedBooksCount();
-    this.loadCompletedMoviesCount();
-    this.loadCompletedTvShowsCount();
   }
 
-  loadCompletedVideoGamesCount(): void {
-    this.videoGameService.getCompletedCountForYear(this.currentYear).subscribe({
-      next: (count) => {
-        this.completedVideoGamesCount = count;
-      },
-      error: (err) => console.error('Error fetching completed video games count:', err),
+  loadCompletedCounts(): void {
+    this.mediaService.getCompletedCountForYear(MediaType.BOOK, this.currentYear).subscribe({
+      next: (count) => (this.completedBooksCount = count),
+      error: (err) => console.error('Error fetching completed books:', err),
     });
-  }
 
-  loadCompletedTvShowsCount(): void {
-    this.tvShowService.getCompletedCountForYear(this.currentYear).subscribe({
-      next: (count) => {
-        this.completedTvShowsCount = count;
-      },
-      error: (err) => console.error('Error fetching completed tv shows count:', err),
+    this.mediaService.getCompletedCountForYear(MediaType.MOVIE, this.currentYear).subscribe({
+      next: (count) => (this.completedMoviesCount = count),
+      error: (err) => console.error('Error fetching completed movies:', err),
     });
-  }
 
-  loadCompletedMoviesCount(): void {
-    this.movieService.getCompletedCountForYear(this.currentYear).subscribe({
-      next: (count) => {
-        this.completedMoviesCount = count;
-      },
-      error: (err) => console.error('Error fetching completed movies count:', err),
+    this.mediaService.getCompletedCountForYear(MediaType.TV_SHOW, this.currentYear).subscribe({
+      next: (count) => (this.completedTvShowsCount = count),
+      error: (err) => console.error('Error fetching completed tv shows:', err),
     });
-  }
 
-  loadCompletedBooksCount(): void {
-    this.bookService.getCompletedCountForYear(this.currentYear).subscribe({
-      next: (count) => {
-        this.completedBooksCount = count;
-      },
-      error: (err) => console.error('Error fetching completed books count:', err),
+    this.mediaService.getCompletedCountForYear(MediaType.VIDEO_GAME, this.currentYear).subscribe({
+      next: (count) => (this.completedVideoGamesCount = count),
+      error: (err) => console.error('Error fetching completed video games:', err),
     });
   }
 }
+
 
 

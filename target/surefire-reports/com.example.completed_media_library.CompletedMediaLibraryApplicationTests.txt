@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.example.completed_media_library.CompletedMediaLibraryApplicationTests
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.578 s -- in com.example.completed_media_library.CompletedMediaLibraryApplicationTests
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 1.456 s -- in com.example.completed_media_library.CompletedMediaLibraryApplicationTests
