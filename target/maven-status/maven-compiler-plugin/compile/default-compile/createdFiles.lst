@@ -5,6 +5,7 @@ com/example/completed_media_library/config/WebConfig$1.class
 com/example/completed_media_library/entities/Media.class
 com/example/completed_media_library/services/BaseService.class
 com/example/completed_media_library/entities/MediaType.class
+com/example/completed_media_library/entities/MediaStatus.class
 com/example/completed_media_library/CompletedMediaLibraryApplication.class
 com/example/completed_media_library/config/CorsConfig.class
 com/example/completed_media_library/repositories/MediaRepository.class

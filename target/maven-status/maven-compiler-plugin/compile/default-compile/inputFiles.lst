@@ -4,6 +4,7 @@
 /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/controllers/MediaController.java
 /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/dtos/MediaDTO.java
 /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/entities/Media.java
+/Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/entities/MediaStatus.java
 /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/entities/MediaType.java
 /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/exceptions/ResourceNotFoundException.java
 /Users/lucasleitz/Desktop/SpringProjects/completed-media-library/src/main/java/com/example/completed_media_library/repositories/MediaRepository.java
